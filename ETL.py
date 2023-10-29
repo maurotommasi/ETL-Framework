@@ -122,7 +122,6 @@ class ETL:
         
         def queue(self, save_obj, pause_seconds = 3600):
             print(f"Queuing for {self.name}")
-            print(self.source.get_encoder()['encoder_type'])
             if self.source.get_encoder()['encoder_type'] == 'html':
                 extraction_thread = threading.Thread(target=self.extract_text_from_website, args=(save_obj, pause_seconds))
                 extraction_thread.start()
