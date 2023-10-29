@@ -1,0 +1,43 @@
+{
+    "h1": [
+        {
+            "text": "Bloomberg",
+            "url": null
+        }
+    ],
+    "h2": [
+        {
+            "text": "We've detected unusual activity from your computer network",
+            "url": null
+        }
+    ],
+    "h3": [
+        {
+            "text": "Why did this happen?",
+            "url": null
+        },
+        {
+            "text": "Need Help?",
+            "url": null
+        }
+    ],
+    "a": [
+        {
+            "text": "Need help? Contact us",
+            "url": "/feedback"
+        },
+        {
+            "text": "Terms of\n                Service",
+            "url": "/notices/tos"
+        },
+        {
+            "text": "Cookie Policy",
+            "url": "/notices/tos"
+        },
+        {
+            "text": "contact\n            our support team",
+            "url": "/feedback"
+        }
+    ],
+    "img": []
+}

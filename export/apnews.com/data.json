@@ -1,0 +1,1533 @@
+{
+    "h1": [],
+    "h2": [],
+    "h3": [],
+    "a": [
+        {
+            "text": "",
+            "url": "/"
+        },
+        {
+            "text": "World",
+            "url": "https://apnews.com/world-news"
+        },
+        {
+            "text": "U.S.",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "Politics",
+            "url": "https://apnews.com/politics"
+        },
+        {
+            "text": "Sports",
+            "url": "https://apnews.com/sports"
+        },
+        {
+            "text": "Entertainment",
+            "url": "https://apnews.com/entertainment"
+        },
+        {
+            "text": "Business",
+            "url": "https://apnews.com/business"
+        },
+        {
+            "text": "Science",
+            "url": "https://apnews.com/science"
+        },
+        {
+            "text": "Fact Check",
+            "url": "https://apnews.com/ap-fact-check"
+        },
+        {
+            "text": "Oddities",
+            "url": "https://apnews.com/oddities"
+        },
+        {
+            "text": "Health",
+            "url": "https://apnews.com/health"
+        },
+        {
+            "text": "Video",
+            "url": "https://apnews.com/video"
+        },
+        {
+            "text": "Climate",
+            "url": "https://apnews.com/climate-and-environment"
+        },
+        {
+            "text": "Spotlight",
+            "url": "https://apnews.com/spotlight"
+        },
+        {
+            "text": "Photography",
+            "url": "https://apnews.com/photography"
+        },
+        {
+            "text": "Tech",
+            "url": "https://apnews.com/technology"
+        },
+        {
+            "text": "Lifestyle",
+            "url": "https://apnews.com/lifestyle"
+        },
+        {
+            "text": "Religion",
+            "url": "https://apnews.com/religion"
+        },
+        {
+            "text": "Press Releases",
+            "url": "https://apnews.com/press-releases"
+        },
+        {
+            "text": "World",
+            "url": "https://apnews.com/world-news"
+        },
+        {
+            "text": "Israel-Hamas War",
+            "url": "https://apnews.com/hub/israel-hamas-war"
+        },
+        {
+            "text": "Russia-Ukraine War",
+            "url": "https://apnews.com/hub/russia-ukraine"
+        },
+        {
+            "text": "Latin America",
+            "url": "https://apnews.com/hub/latin-america"
+        },
+        {
+            "text": "Europe",
+            "url": "https://apnews.com/hub/europe"
+        },
+        {
+            "text": "Africa",
+            "url": "https://apnews.com/hub/africa"
+        },
+        {
+            "text": "Middle East",
+            "url": "https://apnews.com/hub/middle-east"
+        },
+        {
+            "text": "Asia Pacific",
+            "url": "https://apnews.com/hub/asia-pacific"
+        },
+        {
+            "text": "U.S. News",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "Australia",
+            "url": "https://apnews.com/hub/australia"
+        },
+        {
+            "text": "China",
+            "url": "https://apnews.com/hub/china"
+        },
+        {
+            "text": "U.S.",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "Politics",
+            "url": "https://apnews.com/politics"
+        },
+        {
+            "text": "Joe Biden",
+            "url": "https://apnews.com/hub/joe-biden"
+        },
+        {
+            "text": "Election 2024",
+            "url": "https://apnews.com/hub/election-2024"
+        },
+        {
+            "text": "Congress",
+            "url": "https://apnews.com/hub/congress"
+        },
+        {
+            "text": "Sports",
+            "url": "https://apnews.com/sports"
+        },
+        {
+            "text": "AP Top 25 Poll",
+            "url": "https://apnews.com/hub/ap-top-25-college-football-poll"
+        },
+        {
+            "text": "NFL",
+            "url": "https://apnews.com/hub/nfl"
+        },
+        {
+            "text": "MLB",
+            "url": "https://apnews.com/hub/mlb"
+        },
+        {
+            "text": "NHL",
+            "url": "https://apnews.com/hub/nhl"
+        },
+        {
+            "text": "NBA",
+            "url": "https://apnews.com/hub/nba"
+        },
+        {
+            "text": "WNBA",
+            "url": "https://apnews.com/hub/wnba-basketball"
+        },
+        {
+            "text": "Soccer",
+            "url": "https://apnews.com/hub/soccer"
+        },
+        {
+            "text": "Tennis",
+            "url": "https://apnews.com/hub/tennis"
+        },
+        {
+            "text": "Golf",
+            "url": "https://apnews.com/hub/golf"
+        },
+        {
+            "text": "Entertainment",
+            "url": "https://apnews.com/entertainment"
+        },
+        {
+            "text": "Movie reviews",
+            "url": "https://apnews.com/hub/film-reviews"
+        },
+        {
+            "text": "Book reviews",
+            "url": "https://apnews.com/hub/book-reviews"
+        },
+        {
+            "text": "Celebrity",
+            "url": "https://apnews.com/hub/celebrity"
+        },
+        {
+            "text": "Television",
+            "url": "https://apnews.com/hub/television"
+        },
+        {
+            "text": "Music",
+            "url": "https://apnews.com/hub/music"
+        },
+        {
+            "text": "Business",
+            "url": "https://apnews.com/business"
+        },
+        {
+            "text": "Inflation",
+            "url": "https://apnews.com/hub/inflation"
+        },
+        {
+            "text": "Financial Markets",
+            "url": "https://apnews.com/hub/financial-markets"
+        },
+        {
+            "text": "Business Highlights",
+            "url": "https://apnews.com/hub/business-highlights"
+        },
+        {
+            "text": "Financial wellness",
+            "url": "https://apnews.com/hub/financial-wellness"
+        },
+        {
+            "text": "Science",
+            "url": "https://apnews.com/science"
+        },
+        {
+            "text": "Fact Check",
+            "url": "https://apnews.com/ap-fact-check"
+        },
+        {
+            "text": "Oddities",
+            "url": "https://apnews.com/oddities"
+        },
+        {
+            "text": "Health",
+            "url": "https://apnews.com/health"
+        },
+        {
+            "text": "Video",
+            "url": "https://apnews.com/video"
+        },
+        {
+            "text": "Climate",
+            "url": "https://apnews.com/climate-and-environment"
+        },
+        {
+            "text": "Spotlight",
+            "url": "https://apnews.com/spotlight"
+        },
+        {
+            "text": "Photography",
+            "url": "https://apnews.com/photography"
+        },
+        {
+            "text": "Tech",
+            "url": "https://apnews.com/technology"
+        },
+        {
+            "text": "Artificial Intelligence",
+            "url": "https://apnews.com/hub/artificial-intelligence"
+        },
+        {
+            "text": "Social Media",
+            "url": "https://apnews.com/hub/social-media"
+        },
+        {
+            "text": "Lifestyle",
+            "url": "https://apnews.com/lifestyle"
+        },
+        {
+            "text": "Religion",
+            "url": "https://apnews.com/religion"
+        },
+        {
+            "text": "Press Releases",
+            "url": "https://apnews.com/press-releases"
+        },
+        {
+            "text": "World",
+            "url": "https://apnews.com/world-news"
+        },
+        {
+            "text": "Israel-Hamas War",
+            "url": "https://apnews.com/hub/israel-hamas-war"
+        },
+        {
+            "text": "Russia-Ukraine War",
+            "url": "https://apnews.com/hub/russia-ukraine"
+        },
+        {
+            "text": "Latin America",
+            "url": "https://apnews.com/hub/latin-america"
+        },
+        {
+            "text": "Europe",
+            "url": "https://apnews.com/hub/europe"
+        },
+        {
+            "text": "Africa",
+            "url": "https://apnews.com/hub/africa"
+        },
+        {
+            "text": "Middle East",
+            "url": "https://apnews.com/hub/middle-east"
+        },
+        {
+            "text": "Asia Pacific",
+            "url": "https://apnews.com/hub/asia-pacific"
+        },
+        {
+            "text": "U.S. News",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "Australia",
+            "url": "https://apnews.com/hub/australia"
+        },
+        {
+            "text": "China",
+            "url": "https://apnews.com/hub/china"
+        },
+        {
+            "text": "U.S.",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "Politics",
+            "url": "https://apnews.com/politics"
+        },
+        {
+            "text": "Joe Biden",
+            "url": "https://apnews.com/hub/joe-biden"
+        },
+        {
+            "text": "Election 2024",
+            "url": "https://apnews.com/hub/election-2024"
+        },
+        {
+            "text": "Congress",
+            "url": "https://apnews.com/hub/congress"
+        },
+        {
+            "text": "Sports",
+            "url": "https://apnews.com/sports"
+        },
+        {
+            "text": "AP Top 25 Poll",
+            "url": "https://apnews.com/hub/ap-top-25-college-football-poll"
+        },
+        {
+            "text": "NFL",
+            "url": "https://apnews.com/hub/nfl"
+        },
+        {
+            "text": "MLB",
+            "url": "https://apnews.com/hub/mlb"
+        },
+        {
+            "text": "NHL",
+            "url": "https://apnews.com/hub/nhl"
+        },
+        {
+            "text": "NBA",
+            "url": "https://apnews.com/hub/nba"
+        },
+        {
+            "text": "WNBA",
+            "url": "https://apnews.com/hub/wnba-basketball"
+        },
+        {
+            "text": "Soccer",
+            "url": "https://apnews.com/hub/soccer"
+        },
+        {
+            "text": "Tennis",
+            "url": "https://apnews.com/hub/tennis"
+        },
+        {
+            "text": "Golf",
+            "url": "https://apnews.com/hub/golf"
+        },
+        {
+            "text": "Entertainment",
+            "url": "https://apnews.com/entertainment"
+        },
+        {
+            "text": "Movie reviews",
+            "url": "https://apnews.com/hub/film-reviews"
+        },
+        {
+            "text": "Book reviews",
+            "url": "https://apnews.com/hub/book-reviews"
+        },
+        {
+            "text": "Celebrity",
+            "url": "https://apnews.com/hub/celebrity"
+        },
+        {
+            "text": "Television",
+            "url": "https://apnews.com/hub/television"
+        },
+        {
+            "text": "Music",
+            "url": "https://apnews.com/hub/music"
+        },
+        {
+            "text": "Business",
+            "url": "https://apnews.com/business"
+        },
+        {
+            "text": "Inflation",
+            "url": "https://apnews.com/hub/inflation"
+        },
+        {
+            "text": "Financial Markets",
+            "url": "https://apnews.com/hub/financial-markets"
+        },
+        {
+            "text": "Business Highlights",
+            "url": "https://apnews.com/hub/business-highlights"
+        },
+        {
+            "text": "Financial wellness",
+            "url": "https://apnews.com/hub/financial-wellness"
+        },
+        {
+            "text": "Science",
+            "url": "https://apnews.com/science"
+        },
+        {
+            "text": "Fact Check",
+            "url": "https://apnews.com/ap-fact-check"
+        },
+        {
+            "text": "Oddities",
+            "url": "https://apnews.com/oddities"
+        },
+        {
+            "text": "Health",
+            "url": "https://apnews.com/health"
+        },
+        {
+            "text": "Video",
+            "url": "https://apnews.com/video"
+        },
+        {
+            "text": "Climate",
+            "url": "https://apnews.com/climate-and-environment"
+        },
+        {
+            "text": "Spotlight",
+            "url": "https://apnews.com/spotlight"
+        },
+        {
+            "text": "Photography",
+            "url": "https://apnews.com/photography"
+        },
+        {
+            "text": "Tech",
+            "url": "https://apnews.com/technology"
+        },
+        {
+            "text": "Artificial Intelligence",
+            "url": "https://apnews.com/hub/artificial-intelligence"
+        },
+        {
+            "text": "Social Media",
+            "url": "https://apnews.com/hub/social-media"
+        },
+        {
+            "text": "Lifestyle",
+            "url": "https://apnews.com/lifestyle"
+        },
+        {
+            "text": "Religion",
+            "url": "https://apnews.com/religion"
+        },
+        {
+            "text": "Press Releases",
+            "url": "https://apnews.com/press-releases"
+        },
+        {
+            "text": "twitter",
+            "url": "https://twitter.com/AP"
+        },
+        {
+            "text": "instagram",
+            "url": "https://www.instagram.com/apnews/"
+        },
+        {
+            "text": "facebook",
+            "url": "https://www.facebook.com/APNews"
+        },
+        {
+            "text": "ap.org",
+            "url": "https://www.ap.org/"
+        },
+        {
+            "text": "Contact Us",
+            "url": "https://customerzone.ap.org/cz/s/contactsupport"
+        },
+        {
+            "text": "Careers",
+            "url": "https://careers.ap.org/"
+        },
+        {
+            "text": "Advertise with us",
+            "url": "https://contentservices.ap.org"
+        },
+        {
+            "text": "Accessibility Statement",
+            "url": "https://apnews.com/accessibility-statement"
+        },
+        {
+            "text": "Terms of Use",
+            "url": "https://apnews.com/termsofservice"
+        },
+        {
+            "text": "Privacy Policy",
+            "url": "https://apnews.com/privacystatement"
+        },
+        {
+            "text": "About",
+            "url": "https://www.ap.org/about"
+        },
+        {
+            "text": "AP News Values and Principles",
+            "url": "https://www.ap.org/about/news-values-and-principles"
+        },
+        {
+            "text": "AP\u2019s Role in Elections",
+            "url": "https://www.ap.org/about/our-role-in-elections"
+        },
+        {
+            "text": "AP Leads",
+            "url": "https://leads.ap.org"
+        },
+        {
+            "text": "AP Definitive Source Blog",
+            "url": "https://blog.ap.org/"
+        },
+        {
+            "text": "AP Images Spotlight Blog",
+            "url": "https://apimagesblog.com/"
+        },
+        {
+            "text": "AP Stylebook",
+            "url": "https://www.apstylebook.com/"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Israel-Hamas war",
+            "url": "https://apnews.com/article/israel-hamas-war-live-updates-10-29-2023-0898aba5101bffdce24f21801b440a51"
+        },
+        {
+            "text": "AP Top 25",
+            "url": "https://apnews.com/article/ap-top-25-college-football-poll-oklahoma-kansas-kstate-1a6354be1c72dbf1d9d9f1525fb8b105"
+        },
+        {
+            "text": "Matthew Perry dead",
+            "url": "https://apnews.com/article/matthew-perry-dead-drowning-friends-f2963e83691d2bd2a8626d85a69c73cb"
+        },
+        {
+            "text": "Florida shooting",
+            "url": "https://apnews.com/article/deadly-shooting-tampa-florida-ybor-city-6791b6cf9c4165b9f287b6126732f257"
+        },
+        {
+            "text": "Pittsburgh Steelers injury",
+            "url": "https://apnews.com/article/pittsburgh-steelers-minkah-fitzpatrick-injury-e0ccef4724f3a38b9cc9a32b100ad0d2"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/israel-hamas-war-news-10-29-2023-de1a7d660ba2f6d80b3d7aeaae5bb0f3"
+        },
+        {
+            "text": "Gaza receives largest aid shipment so far as deaths top 8,000 and Israel widens military offensive",
+            "url": "https://apnews.com/article/israel-hamas-war-news-10-29-2023-de1a7d660ba2f6d80b3d7aeaae5bb0f3"
+        },
+        {
+            "text": "Live updates | Internet and cell service gradually returns to Gaza after heavy Israeli bombardment",
+            "url": "https://apnews.com/article/israel-hamas-war-live-updates-10-29-2023-0898aba5101bffdce24f21801b440a51"
+        },
+        {
+            "text": "Mass graves, unclaimed bodies and overcrowded cemeteries. The war robs Gaza of funeral rites",
+            "url": "https://apnews.com/article/palestinians-israel-graves-gaza-morgue-dead-9b0349ae914e33492c049430e6649c53"
+        },
+        {
+            "text": "Israeli settler shoots and kills Palestinian harvester as violence surges in the West Bank",
+            "url": "https://apnews.com/article/israel-settler-violence-palestinian-sawiya-west-bank-c3233164162d4c6511008da638474d99"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Mission impossible? Biden says Mideast leaders must consider a two-state solution after the war ends",
+            "url": "https://apnews.com/article/biden-israel-hamas-war-palestinians-independent-state-cf16a65d2e6ac2cf2218d305e3073df7"
+        },
+        {
+            "text": "Israel says its war can both destroy Hamas and rescue hostages. Their families are less certain",
+            "url": "https://apnews.com/article/israel-hamas-war-hostages-families-netanyahu-gallant-49b39b3d43cc263b872191874e2d69fa"
+        },
+        {
+            "text": "Israeli media, also traumatized by Hamas attack, become communicators of Israel\u2019s message",
+            "url": "https://apnews.com/article/israel-gaza-media-hamas-palestinians-41d58d4f42e9912ed576f1b336b245d2"
+        },
+        {
+            "text": "Misinformation about the Israel-Hamas war is flooding social media. Here are the facts",
+            "url": "https://apnews.com/article/israel-hamas-gaza-misinformation-fact-check-e58f9ab8696309305c3ea2bfb269258e"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/mass-shooting-killing-lewiston-maine-d08e0c1a102e2b68d02c947ae5b0e9ee"
+        },
+        {
+            "text": "Residents of Maine gather to pray and reflect, days after a mass shooting left 18 people dead",
+            "url": "https://apnews.com/article/mass-shooting-killing-lewiston-maine-d08e0c1a102e2b68d02c947ae5b0e9ee"
+        },
+        {
+            "text": "Maine police were alerted weeks ago about shooter\u2019s threats",
+            "url": "https://apnews.com/article/maine-guns-mass-shooting-lewiston-warnings-4d5066230b500c152a7dd0d3e4d13f1b"
+        },
+        {
+            "text": "Relief is tinged with sadness as Maine residents resume activities after shooting suspect found dead",
+            "url": "https://apnews.com/article/maine-mass-shooting-lewiston-5a26658b1fd243f0d9c3aa6fc7efc8a5"
+        },
+        {
+            "text": "A teen bowler, a shipbuilder and a sign language interpreter are among the Maine shooting victims",
+            "url": "https://apnews.com/article/maine-shooting-victims-1be7d14e90ef6c91ca23819163d29f3e"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/matthew-perry-friends-justin-trudeau-adele-c4e6ead4b4169652d90ec09f54059b62"
+        },
+        {
+            "text": "Justin Trudeau, friends, actors and fans mourn Matthew Perry",
+            "url": "https://apnews.com/article/matthew-perry-friends-justin-trudeau-adele-c4e6ead4b4169652d90ec09f54059b62"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/moms-for-liberty-carmel-indiana-hamilton-county-437136c699ae3f991d7279836d2998bc"
+        },
+        {
+            "text": "Moms for Liberty unexpectedly finds itself at the center of a heated suburban Indiana mayoral race",
+            "url": "https://apnews.com/article/moms-for-liberty-carmel-indiana-hamilton-county-437136c699ae3f991d7279836d2998bc"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/deadly-shooting-tampa-florida-ybor-city-6791b6cf9c4165b9f287b6126732f257"
+        },
+        {
+            "text": "Shooting kills 2 and injures 18 victims in Florida street with hundreds of people nearby",
+            "url": "https://apnews.com/article/deadly-shooting-tampa-florida-ybor-city-6791b6cf9c4165b9f287b6126732f257"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/ap-top-25-college-football-poll-oklahoma-kansas-kstate-1a6354be1c72dbf1d9d9f1525fb8b105"
+        },
+        {
+            "text": "AP Top 25: Oklahoma slips to No. 10; Kansas, K-State enter poll; No. 1 UGA and top 5 hold steady",
+            "url": "https://apnews.com/article/ap-top-25-college-football-poll-oklahoma-kansas-kstate-1a6354be1c72dbf1d9d9f1525fb8b105"
+        },
+        {
+            "text": "The Trump era has changed the politics of local elections in Georgia, a pivotal 2024 battleground",
+            "url": "https://apnews.com/article/political-cultural-divisions-local-campaigns-georgia-trump-e8261e7a369646c08ca7a1cc6863b71b"
+        },
+        {
+            "text": "4 people, including 2 students, shot near Atlanta college campus",
+            "url": "https://apnews.com/article/georgia-state-university-student-shooting-86b1ca75724355192e603eefcbe0d18e"
+        },
+        {
+            "text": "American hockey player Adam Johnson dies after getting cut in the neck by a skate in England",
+            "url": "https://apnews.com/article/hockey-player-dies-adam-johnson-accident-nottingham-098abfe508a908cdc64bdf1b6d4f4e4e"
+        },
+        {
+            "text": "Arkansas governor\u2019s $19,000 lectern remains out of sight, but not out of mind with audit underway",
+            "url": "https://apnews.com/article/huckabee-sanders-19000-lectern-audit-arkansas-a8363ae825c351ce22df39fa0176d097"
+        },
+        {
+            "text": "Norway\u2019s Mowinckel becomes first skier to be disqualified under new rule banning fluorinated wax",
+            "url": "https://apnews.com/article/alpine-skiing-disqualification-fluor-wax-mowinckel-63b2471c7153b78267f1d384c201f415"
+        },
+        {
+            "text": "Video game adaptation \u2018Five Nights at Freddy\u2019s\u2019 notches $130 million global debut",
+            "url": "https://apnews.com/article/five-nights-at-freddys-box-office-ddbc3cfea70110e92f58a4eabe1e8d29"
+        },
+        {
+            "text": "Hurricane Otis death toll rises to 43, missing now number 36 as search and recovery work continues",
+            "url": "https://apnews.com/article/mexico-hurricane-otis-acapulco-50eb6a8fe677455428cbacfd3966e72c"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/new-hampshire-presidential-ballot-2024-primary-biden-c2ab780055a32fe9f4a79a114fa75c11"
+        },
+        {
+            "text": "New Hampshire\u2019s presidential primary ballots will have 24 Republicans and 21 Democrats, but no Biden",
+            "url": "https://apnews.com/article/new-hampshire-presidential-ballot-2024-primary-biden-c2ab780055a32fe9f4a79a114fa75c11"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/pumpkins-drought-climate-change-water-irrigation-labor-81905cc284aacf30744b2cb5dbe0a141"
+        },
+        {
+            "text": "How extreme weather in the US may have affected the pumpkins you picked this year for Halloween",
+            "url": "https://apnews.com/article/pumpkins-drought-climate-change-water-irrigation-labor-81905cc284aacf30744b2cb5dbe0a141"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/alaska-anchorage-russian-orthodox-church-5ab2d9bd06d56f354f815b246fafc2d3"
+        },
+        {
+            "text": "Anchorage\u2019s oldest building, a Russian Orthodox church, gets new life in restoration project",
+            "url": "https://apnews.com/article/alaska-anchorage-russian-orthodox-church-5ab2d9bd06d56f354f815b246fafc2d3"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/high-school-graduation-rate-boys-c7b8dff33221e0ded2d1369397d96455"
+        },
+        {
+            "text": "Boys graduate high school at lower rates than girls, with lifelong consequences",
+            "url": "https://apnews.com/article/high-school-graduation-rate-boys-c7b8dff33221e0ded2d1369397d96455"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/africa-benin-voodoo-sacred-forests-9c8737ad86d15e1503f3fc908c6c2518"
+        },
+        {
+            "text": "In Benin, Voodoo\u2019s birthplace, believers bemoan steady shrinkage of forests they revere as sacred",
+            "url": "https://apnews.com/article/africa-benin-voodoo-sacred-forests-9c8737ad86d15e1503f3fc908c6c2518"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/john-carpenter-suburban-screams-48a8ffdd8b30c0f2f22fbfe57a72bb5f"
+        },
+        {
+            "text": "Horror icon John Carpenter on being a college dropout, \u2018Barbie\u2019 and telling true scary stories",
+            "url": "https://apnews.com/article/john-carpenter-suburban-screams-48a8ffdd8b30c0f2f22fbfe57a72bb5f"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/candy-corn-halloween-trickortreat-384c51299fe00945c0e92b29cc3ff86a"
+        },
+        {
+            "text": "Love it or hate it, feelings run high over candy corn come Halloween",
+            "url": "https://apnews.com/article/candy-corn-halloween-trickortreat-384c51299fe00945c0e92b29cc3ff86a"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/halloween-decorations-ideas-ad63a8410c416c66f8a86c327009befa"
+        },
+        {
+            "text": "Halloween decorations get gory, and some prefer to dial it down",
+            "url": "https://apnews.com/article/halloween-decorations-ideas-ad63a8410c416c66f8a86c327009befa"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/exorcist-believer-movie-review-ede63f319f0f98243369daa5e189a109"
+        },
+        {
+            "text": "Movie Review: \u2018The Exorcist: Believer\u2019 doesn\u2019t desecrate the original but it won\u2019t compel you",
+            "url": "https://apnews.com/article/exorcist-believer-movie-review-ede63f319f0f98243369daa5e189a109"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/roasting-pumpkin-seeds-recipe-75ba8e3a71081b952fa3b10196023e83"
+        },
+        {
+            "text": "Not all Halloween treats come in wrappers. Some come in a pumpkin",
+            "url": "https://apnews.com/article/roasting-pumpkin-seeds-recipe-75ba8e3a71081b952fa3b10196023e83"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/otis-mexico-acapulco-hurricane-warming-oceans-pacific-18a5160b0d90caf693b41273647bd076"
+        },
+        {
+            "text": "Forecasters were caught off guard by Otis\u2019 growth. But warming means more hurricanes like it",
+            "url": "https://apnews.com/article/otis-mexico-acapulco-hurricane-warming-oceans-pacific-18a5160b0d90caf693b41273647bd076"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/atlanta-hollywood-actors-strike-iatse-5bb54af9322b0a66b3dfb728c23278f0"
+        },
+        {
+            "text": "As the \u2018Hollywood of the South,\u2019 Atlanta has boomed. Its actors and crew are now at a crossroads",
+            "url": "https://apnews.com/article/atlanta-hollywood-actors-strike-iatse-5bb54af9322b0a66b3dfb728c23278f0"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/school-vouchers-scholarships-budget-cost-enrollment-20a819f087af0cb1ed5a60ec24cc8216"
+        },
+        {
+            "text": "Parents like private school vouchers so much that demand is exceeding budgets in some states",
+            "url": "https://apnews.com/article/school-vouchers-scholarships-budget-cost-enrollment-20a819f087af0cb1ed5a60ec24cc8216"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/organ-transplant-disparities-hbcu-a00f3e7b43f3d4e176a9647c49487e92"
+        },
+        {
+            "text": "Few transplant surgeons are Black. Giving medical students a rare peek at organ donation may help",
+            "url": "https://apnews.com/article/organ-transplant-disparities-hbcu-a00f3e7b43f3d4e176a9647c49487e92"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/california-forest-wildfires-climate-change-drought-f116c5a2b4192ffc90990dc4cbfddf0a"
+        },
+        {
+            "text": "Fire, other ravages jeopardize California\u2019s prized forests",
+            "url": "https://apnews.com/article/california-forest-wildfires-climate-change-drought-f116c5a2b4192ffc90990dc4cbfddf0a"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/hunger-food-us-increase-inflation-pandemic-report-49fe26f083583d6efa66c6509657a741"
+        },
+        {
+            "text": "Food insecurity shot up last year with inflation and the end of pandemic-era aid, a new report says",
+            "url": "https://apnews.com/article/hunger-food-us-increase-inflation-pandemic-report-49fe26f083583d6efa66c6509657a741"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/standout-performances-movies-actors-strike-254e0948d7df34534d5d95763d43bd03"
+        },
+        {
+            "text": "The strike has dimmed the spotlight on the fall\u2019s best performances. Here\u2019s 13 you shouldn\u2019t miss",
+            "url": "https://apnews.com/article/standout-performances-movies-actors-strike-254e0948d7df34534d5d95763d43bd03"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/abortion-russia-women-rights-feminism-fc5eab75b5e3d028aeb1f70ec8a9a2b1"
+        },
+        {
+            "text": "Abortion restrictions in Russia spark outrage as the country takes a conservative turn",
+            "url": "https://apnews.com/article/abortion-russia-women-rights-feminism-fc5eab75b5e3d028aeb1f70ec8a9a2b1"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/winter-snow-warmer-climate-change-forecast-el-nino-e5c450e1cb51d186d68aaae1b259b311"
+        },
+        {
+            "text": "Forecast predicts an El Nino winter. What does that mean?",
+            "url": "https://apnews.com/article/winter-snow-warmer-climate-change-forecast-el-nino-e5c450e1cb51d186d68aaae1b259b311"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/trump-georgia-electors-205d1fc6a02e1225c8c51214980a1232"
+        },
+        {
+            "text": "Inside the meeting of Republican electors who sought to thwart Biden\u2019s election win in Georgia",
+            "url": "https://apnews.com/article/trump-georgia-electors-205d1fc6a02e1225c8c51214980a1232"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Politics",
+            "url": "https://apnews.com/politics"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/uncontested-legislative-elections-mississippi-virginia-8d8b1e7dc7d50d2af4a27a2076ecea07"
+        },
+        {
+            "text": "In Mississippi, most voters will have no choice about who represents them in the Legislature",
+            "url": "https://apnews.com/article/uncontested-legislative-elections-mississippi-virginia-8d8b1e7dc7d50d2af4a27a2076ecea07"
+        },
+        {
+            "text": "Trump is returning to Iowa on Sunday for his eighth campaign stop in little more than a month",
+            "url": "https://apnews.com/article/trump-iowa-republicans-caucuses-campaign-2024-89b7fee7f2cc8a2a14ac211e74e74ff7"
+        },
+        {
+            "text": "Biden will visit a Minnesota family farm this week as top officials kick off stops in rural America",
+            "url": "https://apnews.com/article/biden-minnesota-farm-rural-america-dean-phillips-14d8e3a9548af67a04e1028c8f1b75ff"
+        },
+        {
+            "text": "Pence ends White House campaign after struggling to gain traction. \u2018This is not my time,\u2019 he says",
+            "url": "https://apnews.com/article/mike-pence-2024-president-campaign-republican-trump-0ec44fc2a5b8683f34883e0ea72b2ab2"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Entertainment",
+            "url": "https://apnews.com/entertainment"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/matthew-perry-dead-drowning-friends-f2963e83691d2bd2a8626d85a69c73cb"
+        },
+        {
+            "text": "Matthew Perry, Emmy-nominated \u2018Friends\u2019 star, dead at 54",
+            "url": "https://apnews.com/article/matthew-perry-dead-drowning-friends-f2963e83691d2bd2a8626d85a69c73cb"
+        },
+        {
+            "text": "Leo Brooks, a Miami native with country roots, returns to South Florida for new music festival",
+            "url": "https://apnews.com/article/country-bay-music-festival-miami-florida-brooks-5eced0e666ab3c116b22c9a37677ec4b"
+        },
+        {
+            "text": "Richard Moll, who found fame as a bailiff on the original sitcom \u2018Night Court,\u2019 dies at 80",
+            "url": "https://apnews.com/article/richard-moll-dies-night-court-e5f386ab083235a50db814bdaf2ba194"
+        },
+        {
+            "text": "From country to pop, 2014 nostalgia to 2023 reality \u2014 it\u2019s time for Taylor Swift\u2019s \u20181989'",
+            "url": "https://apnews.com/article/taylor-swift-1989-taylors-version-a4002b50f70b5899a846baf3e20de5ab"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "SPORTS",
+            "url": "https://apnews.com/sports"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/world-series-game-2-diamondbacks-rangers-kelly-a1bb4e8fa2ab89fda2ac1bbb9d85a234"
+        },
+        {
+            "text": "Kelly dominates after Korea detour as Diamondbacks rout Rangers 9-1 to tie World Series 1-all",
+            "url": "https://apnews.com/article/world-series-game-2-diamondbacks-rangers-kelly-a1bb4e8fa2ab89fda2ac1bbb9d85a234"
+        },
+        {
+            "text": "AP Top 25 Takeaways: No. 6 OU upset; No. 8 Oregon flexes; No. 1 UGA, No. 4 FSU roll before CFP debut",
+            "url": "https://apnews.com/article/kansas-oklahoma-college-football-playoff-rankins-d1b4e6e371ed173890f774585962b749"
+        },
+        {
+            "text": "Messi\u2019s 1st year with Inter Miami brings a trophy and shows what can happen in Year 2",
+            "url": "https://apnews.com/article/lionel-messi-mls-inter-miami-ballon-dor-6ac707fbad7653eab18eceaa002880cc"
+        },
+        {
+            "text": "Colombian police continue search for father of Liverpool striker D\u00edaz",
+            "url": "https://apnews.com/article/diaz-father-colombia-kidnapping-liverpool-1504e066197e9cd3c2d207a4ed733254"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "US News",
+            "url": "https://apnews.com/us-news"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/uaw-stellantis-tentative-contract-agreement-d32cb38791730c4c92a8b2112c205e59"
+        },
+        {
+            "text": "UAW and Stellantis reach tentative contract deal as union adds strike at Tennessee GM factory",
+            "url": "https://apnews.com/article/uaw-stellantis-tentative-contract-agreement-d32cb38791730c4c92a8b2112c205e59"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "WORLD NEWS",
+            "url": "https://apnews.com/world-news"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/india-explosion-kerala-jehovahs-witness-kerala-samra-d2ae9b7e8ebdf8a008977c8f7f86751a"
+        },
+        {
+            "text": "Explosive device blows up at convention center in south India killing at least one and wounding 36",
+            "url": "https://apnews.com/article/india-explosion-kerala-jehovahs-witness-kerala-samra-d2ae9b7e8ebdf8a008977c8f7f86751a"
+        },
+        {
+            "text": "Thousands of Ukrainians run to commemorate those killed in the war",
+            "url": "https://apnews.com/article/ukraine-war-marathon-kyiv-348d1bb84ca55a249631e20725b41d2f"
+        },
+        {
+            "text": "Russians commemorate victims of Soviet repression as a present-day crackdown on dissent intensifies",
+            "url": "https://apnews.com/article/memorial-soviet-repression-crackdown-russia-moscow-dissent-8aa8ca0e4e405445b6310d74c7853960"
+        },
+        {
+            "text": "These numbers show the staggering toll of the Israel-Hamas war",
+            "url": "https://apnews.com/article/israel-hamas-war-death-toll-numbers-injured-5c9dc40bec95a8408c83f3c2fb759da0"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "BUSINESS",
+            "url": "https://apnews.com/business"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/oklahoma-tyson-cargill-river-water-pollution-chicken-c302567a94cd53d8c8137ee11c76f2ea"
+        },
+        {
+            "text": "Poultry companies ask judge to dismiss ruling that they polluted an Oklahoma watershed",
+            "url": "https://apnews.com/article/oklahoma-tyson-cargill-river-water-pollution-chicken-c302567a94cd53d8c8137ee11c76f2ea"
+        },
+        {
+            "text": "US consumers keep spending briskly even in the face of persistent inflation and high interest rates",
+            "url": "https://apnews.com/article/inflation-prices-federal-reserve-rates-economy-spending-657deb16464e6da9512291822839b342"
+        },
+        {
+            "text": "Less boo for your buck: For the second Halloween in a row, US candy inflation hits double digits",
+            "url": "https://apnews.com/article/halloween-candy-prices-cocoa-sugar-9410c51b7604761ef13cf9bea38691fb"
+        },
+        {
+            "text": "G-7 nations back strong supply chains for energy and food despite global tensions",
+            "url": "https://apnews.com/article/g7-japan-trade-economy-supply-chain-energy-4e4f5bcf81035b26386d32200f5bb2ee"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "SCIENCE",
+            "url": "https://apnews.com/science"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/gavin-newsom-climate-change-cooperation-china-beijing-894dd6b1a0290b12aee9c9915dc3443a"
+        },
+        {
+            "text": "China says it wants to bolster climate cooperation with US as California Gov. Newsom visits Beijing",
+            "url": "https://apnews.com/article/gavin-newsom-climate-change-cooperation-china-beijing-894dd6b1a0290b12aee9c9915dc3443a"
+        },
+        {
+            "text": "China sends its youngest-ever crew to space as it seeks to put astronauts on moon before 2030",
+            "url": "https://apnews.com/article/china-space-tiangong-youngest-crew-0e538a1519b8fa7056078e2b968b52fa"
+        },
+        {
+            "text": "Russian forces simulate nuclear strike as upper house rescinds ratification of test ban treaty",
+            "url": "https://apnews.com/article/russia-putin-rescinds-nuclear-test-ban-8e0c0757781ab65ed4070c94aa02545e"
+        },
+        {
+            "text": "Environmental groups reject deep-sea mining as key UN meeting looms",
+            "url": "https://apnews.com/article/deep-sea-mining-un-seabed-authority-aebaf9801078a3d5019c74042c9ab19a"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "LIFESTYLE",
+            "url": "https://apnews.com/lifestyle"
+        },
+        {
+            "text": "",
+            "url": "https://apnews.com/article/disney-desantis-florida-lgbtq-lawsuits-1032adb410eba93b2e11be9cf363ec08"
+        },
+        {
+            "text": "Disney says DeSantis-appointed district is dragging feet in providing documents for lawsuit",
+            "url": "https://apnews.com/article/disney-desantis-florida-lgbtq-lawsuits-1032adb410eba93b2e11be9cf363ec08"
+        },
+        {
+            "text": "Africa\u2019s fashion industry is growing to meet global demands but needs more investment, UNESCO says",
+            "url": "https://apnews.com/article/lagos-africa-fashion-unesco-4f791fe7bffe2b84be025e177b529f39"
+        },
+        {
+            "text": "Love K-pop star Mark Tuan\u2019s new EP? You can discuss it with his AI twin",
+            "url": "https://apnews.com/article/mark-tuan-kpop-digital-avatar-25d8bcbbc551fab42de876b4b82f0327"
+        },
+        {
+            "text": "DC pandas will be returning to China in mid-November, weeks earlier than expected",
+            "url": "https://apnews.com/article/giant-pandas-smithsonian-national-zoo-china-96c106c85143621e29bcc579a24c068d"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Latest Videos",
+            "url": "https://apnews.com/video"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "Beb\u00e9 scores late again to help Rayo Vallecano hold Real Sociedad to a 2-2 draw in Spanish league",
+            "url": "https://apnews.com/article/atletico-madrid-isco-betis-sociedad-5e6f7c3497d05b9a701bbdf6db0f807d"
+        },
+        {
+            "text": "Eddie Jones resigns as Australia head coach after Rugby World Cup disaster",
+            "url": "https://apnews.com/article/eddie-jones-quits-rugby-world-cup-australia-584c0df7acf35707dbb89123d266fd0e"
+        },
+        {
+            "text": "South Africa stands alone at Rugby World Cup summit as new eras beckon everywhere",
+            "url": "https://apnews.com/article/rugby-world-cup-final-new-zealand-south-africa-3abee6af0885a9f9f1b511bb1993f3b2"
+        },
+        {
+            "text": "Dolphins cornerback Jalen Ramsey intercepts Pats\u2019 Mac Jones in first game back from knee injury",
+            "url": "https://apnews.com/article/jalen-ramsey-interception-dolphins-patriots-a37470ae23f4885966b1ccdf4553d222"
+        },
+        {
+            "text": "Boutier goes 9 playoff holes in Malaysia to get 4th LPGA title of the year",
+            "url": "https://apnews.com/sports/golf-celine-boutier-5135e8f7ed1c74983388799ec61fa20d"
+        },
+        {
+            "text": "Ohio high court upholds 65-year prison term in thefts from nursing homes, assisted living facilities",
+            "url": "https://apnews.com/article/thefts-assisted-living-nursing-homes-ohio-82b29ea54a0b424b59f60ca7de8d1c1c"
+        },
+        {
+            "text": "Mexico raises Hurricane Otis death toll to 43 and puts missing at 36 as search continues",
+            "url": "https://apnews.com/world-news/hurricanes-and-typhoons-general-news-de45a1ca4a45ea50b668f0e29e94c1cd"
+        },
+        {
+            "text": "In Myanmar, a Facebook post deemed inflammatory led to an ex-minister\u2019s arrest",
+            "url": "https://apnews.com/article/myanmar-minister-ye-htut-military-incitement-junta-3e65d01b4ebd88d46d157eea6acde9a9"
+        },
+        {
+            "text": "Haaland scores twice as Man City dominates Man United with 3-0 win",
+            "url": "https://apnews.com/article/haaland-manchester-united-man-city-derby-dbc4572ec857c2ef2256236892f57189"
+        },
+        {
+            "text": "Steelers star safety Minkah Fitzpatrick leaves game against Jags with hamstring injury",
+            "url": "https://apnews.com/article/pittsburgh-steelers-minkah-fitzpatrick-injury-e0ccef4724f3a38b9cc9a32b100ad0d2"
+        },
+        {
+            "text": "6 people were killed and 40 injured when two trains collided in southern India",
+            "url": "https://apnews.com/article/india-train-crash-19567b2ab12cf612bb7477103cf2e8ed"
+        },
+        {
+            "text": "Titans start Will Levis against the Falcons, making him 7th rookie QB starter",
+            "url": "https://apnews.com/article/nfl-titans-rookie-qb-will-levis-falcons-16a78cc43edf1652f6de8061bfa22920"
+        },
+        {
+            "text": "Jets\u2019 Aaron Rodgers drops back and puts weight on injured leg during warmups before game vs Giants",
+            "url": "https://apnews.com/article/new-york-jets-aaron-rodgers-a7770e326c79b8cca93f75f09b4795e4"
+        },
+        {
+            "text": "Palhinha scores a stunning equalizer as Fulham holds Brighton to 1-1 draw",
+            "url": "https://apnews.com/article/brighton-fulham-premier-league-1d560831bdeddf4e6719c69e40965858"
+        },
+        {
+            "text": "Mohamed Salah on target in Liverpool\u2019s 3-0 win against Forest. Players show support for Luis Diaz",
+            "url": "https://apnews.com/article/liverpool-nottingham-forest-premier-league-1db1c289250ef199b600122eaa121e97"
+        },
+        {
+            "text": "Lions hope Jared Goff bounces back, Raiders welcome return of Jimmy Garoppolo on Monday night",
+            "url": "https://apnews.com/article/lions-raiders-goff-garoppolo-monday-fdbc2c2878de656f73803ba80a046793"
+        },
+        {
+            "text": "Brandt rescues 3-3 draw for Dortmund at Frankfurt in the Bundesliga",
+            "url": "https://apnews.com/article/borussia-dortmund-bayer-leverkusen-frankfurt-bundesliga-8f9d5db14cdda9072c5e81105c279eed"
+        },
+        {
+            "text": "Kentucky Derby winner Mage out of Breeders\u2019 Cup Classic, trainer says horse has decreased appetite",
+            "url": "https://apnews.com/article/mage-breeders-cup-classic-6706f7b80e43ecd5ea359cd16cbbf3e9"
+        },
+        {
+            "text": "As college coaches turn into CEOs, X\u2019s and O\u2019s are replaced by dollar signs and bottom lines",
+            "url": "https://apnews.com/article/ncaa-nil-kansas-dickinson-duke-virginia-izzo-7f5fe243798b5ecc0c1807949839834a"
+        },
+        {
+            "text": "Aston Villa cruises to 3-1 victory over Luton in Premier League",
+            "url": "https://apnews.com/article/aston-villa-luton-premier-league-mcginn-b241bd40c8ea2f0d3e08829036d8156a"
+        },
+        {
+            "text": "Florida\u2019s \u2018Fantasy Fest\u2019 ends with increased emphasis on costumes and less on decadence",
+            "url": "https://apnews.com/article/fantasy-fest-key-west-florida-e7b18461863ffcb31e4e5b3826addc41"
+        },
+        {
+            "text": "Cocktail Party in Atlanta, Orlando? Georgia, Florida eye neutral sites for 2026-27, AP sources say",
+            "url": "https://apnews.com/article/georgia-bulldogs-florida-gators-cocktail-party-5e030cb6e6ae8ac65824ca2d8e942b80"
+        },
+        {
+            "text": "West Virginia forward Akok Akok released from hospital after collapsing on court during exhibition",
+            "url": "https://apnews.com/article/west-virginia-akok-released-hospital-collapse-551b0cc1be30978ad9271235e968e28d"
+        },
+        {
+            "text": "Calvert-Lewin scores his 50th Premier League goal for Everton in 1-0 win at West Ham",
+            "url": "https://apnews.com/article/west-ham-everton-premier-league-86bec538189574800bbe1a147f957ad8"
+        },
+        {
+            "text": "Police say shooting at Chicago house party leaves 15 people injured, including 2 critically",
+            "url": "https://apnews.com/article/shooting-chicago-party-police-guns-64bc1388d812c98cce1a0b8d37d6a8b8"
+        },
+        {
+            "text": "Wrong distance takes women\u2019s walk race athletes to mistaken world record at Pan American Games",
+            "url": "https://apnews.com/article/wrong-distance-walk-pan-american-games-f426261286d4504be3af27e4c305d30d"
+        },
+        {
+            "text": "12 people die in a plane crash in the Brazilian Amazon",
+            "url": "https://apnews.com/article/brazil-plane-crash-fc487d48956faff6f842f6e80a05f7c7"
+        },
+        {
+            "text": "Indianapolis police say 1 dead, 9 others injured in overnight shooting at Halloween party",
+            "url": "https://apnews.com/article/shooting-guns-indianapolis-police-d895a5d0235a1e3868cd1e13eaae99c1"
+        },
+        {
+            "text": "Mbappe scores late winner and reaches a landmark as PSG edges Brest 3-2 in French league",
+            "url": "https://apnews.com/article/french-league-roundup-mbappe-edd496ac64df0094947410316ca7dcea"
+        },
+        {
+            "text": "Man charged in killing of Nat King Cole\u2019s great-nephew",
+            "url": "https://apnews.com/article/nat-king-cole-greatnephew-killed-arrest-be8846fcaa6118850ee8988fe49b563c"
+        },
+        {
+            "text": "",
+            "url": "/"
+        },
+        {
+            "text": "ap.org",
+            "url": "https://www.ap.org/"
+        },
+        {
+            "text": "Contact Us",
+            "url": "https://customerzone.ap.org/cz/s/contactsupport"
+        },
+        {
+            "text": "Careers",
+            "url": "https://careers.ap.org/"
+        },
+        {
+            "text": "Advertise with us",
+            "url": "https://contentservices.ap.org"
+        },
+        {
+            "text": "Accessibility Statement",
+            "url": "https://apnews.com/accessibility-statement"
+        },
+        {
+            "text": "Terms of Use",
+            "url": "https://apnews.com/termsofservice"
+        },
+        {
+            "text": "Privacy Policy",
+            "url": "https://apnews.com/privacystatement"
+        },
+        {
+            "text": "About",
+            "url": "https://www.ap.org/about"
+        },
+        {
+            "text": "AP News Values and Principles",
+            "url": "https://www.ap.org/about/news-values-and-principles"
+        },
+        {
+            "text": "AP\u2019s Role in Elections",
+            "url": "https://www.ap.org/about/our-role-in-elections"
+        },
+        {
+            "text": "AP Leads",
+            "url": "https://leads.ap.org"
+        },
+        {
+            "text": "AP Definitive Source Blog",
+            "url": "https://blog.ap.org/"
+        },
+        {
+            "text": "AP Images Spotlight Blog",
+            "url": "https://apimagesblog.com/"
+        },
+        {
+            "text": "AP Stylebook",
+            "url": "https://www.apstylebook.com/"
+        },
+        {
+            "text": "twitter",
+            "url": "https://twitter.com/AP"
+        },
+        {
+            "text": "instagram",
+            "url": "https://www.instagram.com/apnews/"
+        },
+        {
+            "text": "facebook",
+            "url": "https://www.facebook.com/APNews"
+        }
+    ],
+    "img": [
+        {
+            "text": null,
+            "url": "https://sb.scorecardresearch.com/p?c1=2&;c2=3005041&cv=3.6.0&cj=1"
+        },
+        {
+            "text": "AP Logo",
+            "url": "https://assets.apnews.com/fa/ba/9258a7114f5ba5c7202aaa1bdd66/aplogo.svg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/94c503b/2147483647/strip/true/crop/640x236+0+0/resize/320x118!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc3%2F4c%2F65482a7b452db66043542c093eaf%2Fpromo-2x.png"
+        },
+        {
+            "text": "Palestinians mourn their relatives killed in the Israeli bombardment of the Gaza Strip, in a morgue in Khan Younis, Sunday, Oct. 29, 2023. ( AP Photo/Fatima Shbair)",
+            "url": "https://dims.apnews.com/dims4/default/96dc340/2147483647/strip/true/crop/5978x3985+0+0/resize/1020x680!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fd3%2Fff%2F4a138cd1a30b58c222f771a8c322%2Fc4807ab37dcf4f18bfe0b58e023de40b"
+        },
+        {
+            "text": "People gather at a vigil in Lisbon Falls, Maine, for the victims of the week's mass shootings, Saturday, Oct. 28, 2023. (AP Photo/Matt Rourke)",
+            "url": "https://dims.apnews.com/dims4/default/befa744/2147483647/strip/true/crop/4987x3325+0+0/resize/1020x680!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F6d%2F2b%2Fde0cf91e5c1b114fba05be23b6f9%2F0fb16e8e423d46629cd58a866298a4dd"
+        },
+        {
+            "text": "FILE - Matthew Perry arrives at the premiere of \"The Invention of Lying\" in Los Angeles on Monday, Sept. 21, 2009. Perry, who starred as Chandler Bing in the hit series \u201cFriends,\u201d has died. He was 54. The Emmy-nominated actor was found dead of an apparent drowning at his Los Angeles home on Saturday, according to the Los Angeles Times and celebrity website TMZ, which was the first to report the news. Both outlets cited unnamed sources confirming Perry\u2019s death. His publicists and other representatives did not immediately return messages seeking comment. (AP Photo/Matt Sayles, File)",
+            "url": "https://dims.apnews.com/dims4/default/eeb5132/2147483647/strip/true/crop/3544x2361+0+8/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9e%2F70%2F3534dfa64b039c90c9697fb44b1e%2F408c9a35f03841df95e9ff299482abc3"
+        },
+        {
+            "text": "Signs for the Carmel, Ind. mayoral race between Democrat Miles Nelson and Republican Sue Finkam are among the display for signs outside an early voting site at the Hamilton County Courthouse in Noblesville, Ind., Thursday, Oct. 26, 2023. (AP Photo/Michael Conroy)",
+            "url": "https://dims.apnews.com/dims4/default/862e2dc/2147483647/strip/true/crop/5849x3896+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2c%2F9c%2Ff79a496c3c0d85ea1189fce19397%2F929d2f2b103842d199298c514ea64233"
+        },
+        {
+            "text": "Tampa police officers stand in the street in the Ybor City of Tampa after a shooting Sunday, Oct. 29, 2023. A fight between two groups turned deadly in a shooting on a Tampa street during Halloween festivities. (AP Photo/Chris O'Meara)",
+            "url": "https://dims.apnews.com/dims4/default/02ec8ba/2147483647/strip/true/crop/4200x2798+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Faa%2F30%2Fdea4f909462d990d3baa2cec2822%2F80cd0090fefb446193458bb2d039cbf5"
+        },
+        {
+            "text": "Kansas players celebrate with fans on the field after their NCAA college football game against Oklahoma Saturday, Oct. 28, 2023, in Lawrence, Kan. Kansas won 38-33. (AP Photo/Charlie Riedel)",
+            "url": "https://dims.apnews.com/dims4/default/3f4a743/2147483647/strip/true/crop/5543x3692+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F5e%2F4c%2F675a2293f541938f0ac4e2494394%2F9c6d5e4005424e64bc9f059bcf2b01c5"
+        },
+        {
+            "text": "Republican presidential candidate former President Donald Trump talks with New Hampshire Secretary of State David Scanlan, right, as he signs papers to be on the 2024 Republican presidential primary ballot at the New Hampshire Statehouse, Monday, Oct. 23, 2023, in Concord, N.H. (AP Photo/Charles Krupa)",
+            "url": "https://dims.apnews.com/dims4/default/e88f27f/2147483647/strip/true/crop/4631x3087+0+0/resize/567x378!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fda%2Fcb%2F91c34f7ebaf6924cd9a4a08ab34a%2F0bf86556cf61443d916788c7bd04690f"
+        },
+        {
+            "text": "Alan Mazzotti walks through one of his pumpkin fields Oct. 26, 2023, in Hudson, Colo. For some pumpkin growers in states like Texas, New Mexico and Colorado, this year's pumpkin crop was a reminder of the water challenges hitting agriculture across the Southwest and West as human-caused climate change exacerbates drought and heat extremes. (AP Photo/Brittany Peterson)",
+            "url": "https://dims.apnews.com/dims4/default/f979125/2147483647/strip/true/crop/4240x2824+0+4/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F3f%2Fb5%2Fee7bcb633b930a852e3890c1c3dc%2F47434b5d003f40a4a7ab99f2b1f63c7f"
+        },
+        {
+            "text": "The old St. Nicholas Church stands in Eklutna, Alaska, on Oct. 12, 2023. A three-year restoration effort began Oct. 13, with the removal of the bell tower. (AP Photo/Mark Thiessen)",
+            "url": "https://dims.apnews.com/dims4/default/ad7f542/2147483647/strip/true/crop/3969x2644+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F43%2F07%2F7706d8802f79af35f381a0699254%2Fa174503a304b4f62a2a05f5e64f13b57"
+        },
+        {
+            "text": "Bryant West poses for a portrait on a basketball court built by NBA star Devin Booker, who went to high school here, in Moss Point, Miss., Friday, Oct. 20, 2023. Girls consistently are outperforming boys, graduating at higher rates at public high schools around the country. Students, educators and researchers say there are several reasons why boys are falling short.(AP Photo/Gerald Herbert)",
+            "url": "https://dims.apnews.com/dims4/default/be9eab9/2147483647/strip/true/crop/5457x3635+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2e%2F31%2F65ccd862b8a8fc3421d41dba436b%2Fea4bfdc278514a1896f9be42367c2ba2"
+        },
+        {
+            "text": "A man paddles a canoe near a Voodoo sacred forest in Adjarra, Benin, on Wednesday, Oct. 4, 2023. As the government grapples with preserving the forests while developing the country, Voodoo worshippers worry the loss of its spaces could have far reaching effects. (AP Photo/Sunday Alamba)",
+            "url": "https://dims.apnews.com/dims4/default/4b9ff1d/2147483647/strip/true/crop/8640x5755+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff4%2F8c%2F16343ded3bfb4cdce1c798aa16bb%2F575bb963b07a451b99fa5f5f1f647043"
+        },
+        {
+            "text": "Director John Carpenter poses for a portrait at his office, Tuesday, Oct. 3, 2023, in Los Angeles. (AP Photo/Chris Pizzello)",
+            "url": "https://dims.apnews.com/dims4/default/ca72cd7/2147483647/strip/true/crop/5291x3527+0+172/resize/567x378!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8a%2Fc4%2Ff34b41b824c1e950d94842d26a00%2F571b02084f04462dbcdb45cb3e1c7dc0"
+        },
+        {
+            "text": "This image shows a pile of candy corn in Westchester County, N.Y. on Oct. 23, 2023. Cruel joke for trick-or-treaters or coveted seasonal delight? The great Halloween debate over candy corn is on. (AP Photo/Julia Rubin)",
+            "url": "https://dims.apnews.com/dims4/default/4059d32/2147483647/strip/true/crop/2100x1399+0+157/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F4d%2F3e%2F3b0e612b5af6210793a2a0856d21%2F27a81f964b8445f7873e546866471e28"
+        },
+        {
+            "text": "This photo provided by Balsam Hill shows their battery-operated floating candle set. Displayed indoors or out, it creates a spooky aura that might even evoke Harry Potter for some. (Balsam Hill via AP)",
+            "url": "https://dims.apnews.com/dims4/default/560df91/2147483647/strip/true/crop/1638x1091+0+115/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc0%2Fbd%2F83427bee0a53cacb4a92d92c5df7%2F27cef957bbed41499ea2431153830358"
+        },
+        {
+            "text": "This image released by Universal Pictures shows Ellen Burstyn, left, and Leslie Odom, Jr. in a scene from \"The Exorcist: Believer.\" (Anne Marie Fox/Universal Pictures via AP)",
+            "url": "https://dims.apnews.com/dims4/default/e96d7af/2147483647/strip/true/crop/2924x1948+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F6a%2Fc9%2Fd28da425f905e24bb202c6a952c6%2F5a93d7b25f144da5b2f01db74482949a"
+        },
+        {
+            "text": "Pumpkin seeds appear on a kitchen counter in New York in 2019. (Cheyenne M. Cohen via AP)",
+            "url": "https://dims.apnews.com/dims4/default/938f960/2147483647/strip/true/crop/3000x1998+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F81%2F02%2F225954d28bfc61b5ac4aafaff1be%2Faedf47e42a10440eafcace0f33d0e0d0"
+        },
+        {
+            "text": "FILE - A woman walks away with stuff she took from a furniture store after Hurricane Otis ripped through Acapulco, Mexico, Wednesday, Oct. 25, 2023. Hurricane Otis turned from mild to monster in record time, and scientists are struggling to figure out how \u2014 and why they didn't see it coming. (AP Photo/Marco Ugarte, File)",
+            "url": "https://dims.apnews.com/dims4/default/39f2349/2147483647/strip/true/crop/3625x2417+0+0/resize/1020x680!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F9c%2Fbb%2F0e1f86ef31427034fb703c8c365a%2Fbb0e9d3d046f44e98ff4d1c1aba70ff3"
+        },
+        {
+            "text": "Camera assistant Alex Buhlig plays his guitar outside his Atlanta apartment on Oct. 18, 2023. With the actors' strike still ongoing and filming largely shut down, Buhlig has been teaching guitar lessons to make ends meet. (AP Photo/R.J. Rico)",
+            "url": "https://dims.apnews.com/dims4/default/bd00f80/2147483647/strip/true/crop/5760x3840+0+0/resize/1020x680!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F52%2F03%2F0cf41bb0814f94efd2f49f69a529%2F065e5c717e2f4edc86dce64d3b0154ce"
+        },
+        {
+            "text": "Aaron Galaz and his son pose for a photo on Wednesday, Oct. 18, 2023 in Phoenix. Aaron Galaz said his son is enrolled in a program that uses taxpayer funds to pay for private-school tuition in part so his son could be challenged more in class. At least four states that have made most children eligible for taxpayer-funded scholarships to private schools are seeing more families using the programs than planned. That could cost taxpayers, but it's early to know the exact budget implications. (AP Photo/Rick Scuteri)",
+            "url": "https://dims.apnews.com/dims4/default/2f6dd69/2147483647/strip/true/crop/7934x5285+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F16%2F11%2Fd24a5f836d9817e9dc9b84a5c169%2Fc3545da7470c430b9b5bcb507c75d576"
+        },
+        {
+            "text": "Meharry Medical College students Emmanuel Kotey, center, and Teresa Belledent, right, watch as the liver and kidneys are removed from an organ donor June 15, 2023, in Jackson, Tenn. They\u2019re part of a novel pilot program to encourage more Black and other minority doctors-to-be to get involved in the transplant field, increasing the trust of patients of color. (AP Photo/Mark Humphrey)",
+            "url": "https://dims.apnews.com/dims4/default/8e685dd/2147483647/strip/true/crop/8315x5539+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F44%2F32%2F1b2ddac54fef00252fb55f815ec4%2F0e65f049da3544e88b9145917b32769c"
+        },
+        {
+            "text": "Hugh Safford, an environmental science and policy researcher at the University of California, Davis, is silhouetted as he examines damage from the 2021 Caldor Fire in Eldorado National Forest, Calif., near Lake Tahoe on Oct. 22, 2022. Scientists say forest is disappearing as increasingly intense fires alter landscapes around the planet, threatening wildlife, jeopardizing efforts to capture climate-warming carbon and harming water supplies. (AP Photo/Brian Melley)",
+            "url": "https://dims.apnews.com/dims4/default/9fadb07/2147483647/strip/true/crop/6000x3997+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F61%2F62%2F20c74d7a52e65d2d564adc73f27d%2F4863030b856f47e3b35094363c4bb59c"
+        },
+        {
+            "text": "FILE - Second-grade students select their meals during lunch break in the cafeteria, Dec. 12, 2022, at an elementary school in Scottsdale, Ariz. More students in schools serving low-income communities will be eligible to receive breakfast and lunch at no cost under a rule change announced Tuesday, Sept. 26, 2023, by the U.S. Department of Agriculture. (AP Photo/Alberto Mariani, File)",
+            "url": "https://dims.apnews.com/dims4/default/3faa684/2147483647/strip/true/crop/4051x2698+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F26%2F2b%2F86987af37e2482837c4a7b3136cb%2F88b88f0031a344c19428daeee27c8d5b"
+        },
+        {
+            "text": "This image released by Amazon Prime Video shows Gael Garcia Bernal in a scene from \"Cassandro.\" (Amazon Prime Video via AP)",
+            "url": "https://dims.apnews.com/dims4/default/1fa38ab/2147483647/strip/true/crop/3000x1998+0+1/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F46%2F76%2Fd4a1518f83a98a7efe7d0fabafa3%2F7d1ec378b0f542e3ab7a2b0a7bb67ad6"
+        },
+        {
+            "text": "FILE - Russian President Vladimir Putin attends a midnight Mass on Russian Orthodox Christmas in the village of Turginovo, about 150 kilometers (90 miles) northwest of Turginovo, Russia on Jan. 7, 2016. As Putin has formed a closer alliance with the Orthodox Church, the country has embraced what officials call \u201ctraditional values,\u201d and Russia has sought to put more restrictions on abortion. Russia\u2019s health minister has condemned women for prioritizing careers over childbearing. (Alexei Druzhinin, Sputnik, Kremlin Pool Photo via AP, File)",
+            "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIzOTlweCIgd2lkdGg9IjU5OXB4Ij48L3N2Zz4="
+        },
+        {
+            "text": "FILE - A passenger disembarks from a ferry arriving from Peaks Island, Feb. 4, 2023, in Portland, Maine. United States winter looks likely to be a bit low on snow and extreme cold outbreaks, with federal forecasters predicting the North to get warmer than normal and the South wetter and stormier, officials at the National Oceanic and Atmospheric Administration said Thursday, Oct. 19, 2023, in releasing their winter outlook. (AP Photo/Robert F. Bukaty, File)",
+            "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIzOTlweCIgd2lkdGg9IjU5OXB4Ij48L3N2Zz4="
+        },
+        {
+            "text": "FILE \u2013 Then-Georgia Republican Party Chairman David Shafer (sitting) consults with Donald Trump reelection campaign lawyer Ray Smith during a meeting of Republican electors who cast votes for Trump and Vice President Mike Pence at the Georgia Capitol, Dec. 14, 2020, in Atlanta. The meeting of the electors has become a key element in the prosecution of Trump and 18 others in Georgia. Shafer and Smith are two of the four people present that day who was indicted by a Fulton County grand jury in August 2023 on charges that he conspired to illegally overturn Democrat Joe Biden's win in Georgia. (AP Photo/Ben Gray, File)",
+            "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIzOTlweCIgd2lkdGg9IjU5OXB4Ij48L3N2Zz4="
+        },
+        {
+            "text": "FILE - Mississippi Sen. Dean Kirby, R-Pearl, speaks during debate, March 29, 2022, at the Mississippi Capitol in Jackson, Miss. Kirby is unopposed in the Nov. 7, 2023, general election, as he has been in most elections since he first won office in 1991. (AP Photo/Rogelio V. Solis, File)",
+            "url": "https://dims.apnews.com/dims4/default/9712c0b/2147483647/strip/true/crop/6000x3997+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fbe%2F09%2F8976b7f51c927c2f3c23ee3d1bae%2F2a3a3fc970c24fe9aafa0daa81ac96bd"
+        },
+        {
+            "text": "FILE - Matthew Perry arrives at the premiere of \"The Invention of Lying\" in Los Angeles on Sept. 21, 2009. Perry turns 53 on Aug. 19. (AP Photo/Matt Sayles, File)",
+            "url": "https://dims.apnews.com/dims4/default/ddf0110/2147483647/strip/true/crop/3000x1998+0+6/resize/599x399!/quality/90/?url=https%3A%2F%2Fstorage.googleapis.com%2Fafs-prod%2Fmedia%2Fc0d659cd0c5243bd8753fd57bd497822%2F3000.jpeg"
+        },
+        {
+            "text": "Arizona Diamondbacks starting pitcher Merrill Kelly throws against the Texas Rangers during the first inning in Game 2 of the baseball World Series Saturday, Oct. 28, 2023, in Arlington, Texas. (AP Photo/Brynn Anderson)",
+            "url": "https://dims.apnews.com/dims4/default/3713739/2147483647/strip/true/crop/4855x3234+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F80%2Ffb%2F15b0672bbb65fc0f850089508cb4%2F57377076b709430b93cb1a61d8e3442f"
+        },
+        {
+            "text": "FILE - United Auto Workers members walk the picket line during a strike at the Stellantis Sterling Heights Assembly Plant, in Sterling Heights, Mich., Monday, Oct. 23, 2023. Jeep maker Stellantis has reached a tentative contract agreement with the United Auto Workers union that follows a template set earlier this week by Ford, two people with knowledge of the negotiations said Saturday, Oct. 28, 2023. (AP Photo/Paul Sancya, File)",
+            "url": "https://dims.apnews.com/dims4/default/2c66d4a/2147483647/strip/true/crop/6000x3997+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F8e%2Ff3%2Fe28c61d001a79981ba9f63969330%2Fce7e38ec0e844d7da93f8a09c84e15dc"
+        },
+        {
+            "text": "People gather outside following a blast at the Zamra convention center in Kalamassery, a town in Kochi, southern Kerala state, India, Sunday, Oct.29, 2023. At least one person died and more than 20 were injured in the explosion, authorities said. (AP Photo)",
+            "url": "https://dims.apnews.com/dims4/default/f45f5b7/2147483647/strip/true/crop/4748x3163+16+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc5%2F38%2F0fe6fadf18eb3f3dac60406a8b27%2F609da7ca0cbd4b15ae71d9993be8135b"
+        },
+        {
+            "text": "FILE - A Tyson food product is seen in Montpelier, Vt., Nov. 18, 2011. The world's largest poultry producer and other poultry companies are asking a federal judge to dismiss his ruling that they polluted an Oklahoma watershed. Arkansas-based Tyson Foods, Minnesota-based Cargill Inc. and the others say in a motion filed Thursday, Oct. 26, 2023, that the case is \u201cconstitutionally moot\u201d because the evidence is now more than 13 years old. (AP Photo/Toby Talbot, File)",
+            "url": "https://dims.apnews.com/dims4/default/08fd669/2147483647/strip/true/crop/2135x1422+97+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fff%2Ffa%2F9fca78e642c6c86f95c7da95b18c%2Ff132fa3d23e04219bf552cf8f56c3f13"
+        },
+        {
+            "text": "California Gov. Gavin Newsom, right, speaks during the Great Wall Climate Dialogue held at the Yanqi hotel on the outskirts of Beijing, Thursday, Oct. 26, 2023. Newsom is on a weeklong tour of China to push for climate cooperation. (AP Photo/Ng Han Guan)",
+            "url": "https://dims.apnews.com/dims4/default/db7ac47/2147483647/strip/true/crop/6387x4254+0+2/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F14%2F48%2F3af0b38a3852a1342d9e411b95d8%2F9c24a81847ba4726b514c535c2d57726"
+        },
+        {
+            "text": "Fireworks launch over Cinderella Castle at the Magic Kingdom at Walt Disney World, in Lake Buena Vista, Fla., Sept. 30, 2021. For Disney fans, Halloween is among the most desirable (and expensive) times to visit its theme parks. That\u2019s largely due to the after-hours parties: the Oogie Boogie Bash in California and Mickey\u2019s Not-So-Scary Halloween Party in Florida. Disney Halloween parties are held on select nights starting as early as August and can cost up to about $210 per person. (Joe Burbank/Orlando Sentinel via AP, file)",
+            "url": "https://dims.apnews.com/dims4/default/e82afe4/2147483647/strip/true/crop/4224x2814+0+119/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F54%2F35%2Fc4bef1523abe29cd3c2543c25046%2Feeb4a232d987495f96393d25ef89f3ef"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/cb37ebd/2147483647/strip/true/crop/1275x720+3+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fa4%2Fe0%2F878685cee8c6597fa3ecd958fb32%2Fus-me-lewiston-shooting-residents-reax-20231026cr-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/a18f108/2147483647/strip/true/crop/1913x1080+4+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc0%2F04%2Fa0cbab6315beb756bed623234b3a%2Fus-me-lewiston-shootings-fbi-search-20231026cr-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/d9f2478/2147483647/strip/true/crop/1913x1080+4+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2f%2Fae%2F2df3eae52aa6a990fe9b791ed135%2Fgaz-war-latest-strike-20231026crxx-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/f732cdf/2147483647/strip/true/crop/1275x720+3+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fc2%2F6a%2F1cf79902fd6368048f04dc1de4b1%2Funga-israel-hamas-war-envoys-20231026cr-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/fd349f2/2147483647/strip/true/crop/1275x720+3+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fae%2F0b%2Fb1478c86f307ab10d443ca0e8167%2Fus-house-speaker-johnson-ap-explains-20231026cr-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/f45c8bc/2147483647/strip/true/crop/1275x720+3+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F41%2F98%2Fd70e08f7f0530f1d41a27ab15198%2Fus-cr-the-beatles-20231025e-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/94deb6f/2147483647/strip/true/crop/1913x1080+4+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F93%2Fe3%2Fa2dffae869f2f67255515e632452%2Fmex-hurricane-otis-aftermath-20231026cr-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/ec95fdb/2147483647/strip/true/crop/1433x809+4+0/resize/170x96!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fb2%2Fa0%2F55d75441e2fa2eed1b22eb12b087%2Fus-cr-ziwe-20231025e-1920x1080.jpg"
+        },
+        {
+            "text": null,
+            "url": "https://dims.apnews.com/dims4/default/8650001/2147483647/strip/true/crop/992x617+0+0/resize/225x140!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ffc%2F24%2F7ff11448446fb8500bc984551325%2Faplogo-with-tagline.png"
+        }
+    ]
+}

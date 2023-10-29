@@ -1,0 +1,297 @@
+{
+    "h1": [],
+    "h2": [],
+    "h3": [],
+    "a": [
+        {
+            "text": "Skip to main content",
+            "url": "#mainContentSection"
+        },
+        {
+            "text": "",
+            "url": "/"
+        },
+        {
+            "text": "Home",
+            "url": "/"
+        },
+        {
+            "text": "U.S.",
+            "url": "/news/nation/"
+        },
+        {
+            "text": "Sports",
+            "url": "/sports/"
+        },
+        {
+            "text": "Entertainment",
+            "url": "/entertainment/"
+        },
+        {
+            "text": "Life",
+            "url": "/life/"
+        },
+        {
+            "text": "Money",
+            "url": "/money/"
+        },
+        {
+            "text": "Tech",
+            "url": "/tech/"
+        },
+        {
+            "text": "Travel",
+            "url": "/travel/"
+        },
+        {
+            "text": "Opinion",
+            "url": "/opinion/"
+        },
+        {
+            "text": "For Subscribers",
+            "url": "/for-subscribers/"
+        },
+        {
+            "text": "Weather",
+            "url": "/weather/"
+        },
+        {
+            "text": "Investigations",
+            "url": "/news/investigations/"
+        },
+        {
+            "text": "Crosswords",
+            "url": "http://puzzles.usatoday.com/"
+        },
+        {
+            "text": "Coupons",
+            "url": "https://coupons.usatoday.com/"
+        },
+        {
+            "text": "Give Feedback",
+            "url": "https://cm.usatoday.com/site-feedback/"
+        },
+        {
+            "text": "Media",
+            "url": "/media/"
+        },
+        {
+            "text": "For You",
+            "url": "/for-you/"
+        },
+        {
+            "text": "Contributor Content",
+            "url": "/contributor-content/"
+        },
+        {
+            "text": "Obituaries",
+            "url": "/obituaries/"
+        },
+        {
+            "text": "",
+            "url": "/"
+        },
+        {
+            "text": "'Civil order' breaking down in Gaza, UN official says: Updates",
+            "url": "/story/news/world/israel-hamas/2023/10/29/israel-hamas-war-gaza-live-updates/71371348007/"
+        },
+        {
+            "text": "Maine mass killing: Note from suspected shooter; 'tragic,' says Biden",
+            "url": "/story/news/nation/2023/10/28/maine-mass-shootings-live-updates-saturday/71359607007/"
+        },
+        {
+            "text": "House Republicans clash with colleagues over Israel, Ukraine aid",
+            "url": "/story/news/politics/2023/10/29/israel-ukraine-funding-house-republican-senate-congress/71371675007/"
+        },
+        {
+            "text": "Matthew Perry was 'Friends' with all of usTV",
+            "url": "/story/entertainment/tv/2023/10/29/matthew-perry-remembered-why-we-all-loved-friends-star/71371576007/"
+        },
+        {
+            "text": "Coaches Poll: Oregon surges in top 10, while Georgia remains No. 1College Football",
+            "url": "/story/sports/ncaaf/2023/10/29/college-football-coaches-poll-oregon-georgia/71301976007/"
+        },
+        {
+            "text": "Don't 'make an emotional decision' about the stock market's correctionMoney",
+            "url": "/story/money/2023/10/29/stock-market-correction-territory-meaning/71349135007/"
+        },
+        {
+            "text": "Mike Johnson signals Hunter Biden will be subpoenaed in impeachment inquiryPolitics",
+            "url": "/story/news/politics/2023/10/29/mike-johnson-hunter-biden-subpoena-impeachment-inquiry/71371811007/"
+        },
+        {
+            "text": "Maine shooting may be worst-ever affecting deaf community with 4 deadNation",
+            "url": "/story/news/nation/2023/10/29/maine-mass-shooting-may-be-worst-ever-affecting-us-deaf-community/71372264007/"
+        },
+        {
+            "text": "Former NHL player dies after 'freak accident' during game in EnglandNHL",
+            "url": "/story/sports/nhl/2023/10/29/adam-johnson-former-penguins-player-dies-skate-cut-england/71371172007/"
+        },
+        {
+            "text": "Burnout and deadly errors: America's broken pharmacy system in revoltInvestigations",
+            "url": "/story/news/investigations/2023/10/26/pharmacy-chains-dangerous-conditions-medication-errors/71153960007/"
+        },
+        {
+            "text": "Two dead, 18 injured in Ybor City, Florida, shootingNation",
+            "url": "/story/news/nation/2023/10/29/two-dead-18-injured-in-ybor-city-tampa-florida-shooting/71372532007/"
+        },
+        {
+            "text": "Chris Christie scoffs at a second Donald Trump term: 'Clowns and rogues gallery'Elections",
+            "url": "/story/news/politics/elections/2023/10/29/chris-christie-donald-trump-second-term-2024-presidential/71372181007/"
+        },
+        {
+            "text": "Live updates: Cowboys thoroughly dominating Rams at AT&T StadiumNFL",
+            "url": "/story/sports/nfl/2023/10/29/nfl-week-9-cowboys-rams-updates-score-highlights/71359446007/"
+        },
+        {
+            "text": "Moderate is a myth. By electing Speaker Johnson, GOP goes full MAGA.Columnists",
+            "url": "/story/opinion/columnist/2023/10/29/mike-johnson-election-denier-republicans-trump-extremism/71346454007/"
+        },
+        {
+            "text": "What's the real MPG? New vehicle standards got confusing. What to knowCars",
+            "url": "/story/money/cars/2023/10/29/mpg-standards-car-truck-fuel-economy/71349965007/"
+        },
+        {
+            "text": "The best moments from Nate Bargatze's 'SNL' hosting gigTV",
+            "url": "/story/entertainment/tv/2023/10/29/snl-nate-bargatze-best-moments-monologue/71371614007/"
+        },
+        {
+            "text": "'Billions' of farewells, finance titan face-off in drama series finaleTV",
+            "url": "/story/entertainment/tv/2023/10/29/billions-series-finale-recap/71305636007/"
+        },
+        {
+            "text": "Schwarzenegger says Manchin 'stands out' as 2024 pick, knocks Trump, BidenElections",
+            "url": "/story/news/politics/elections/2023/10/29/schwarzenegger-manchin-2024-knocks-trump-biden/71372169007/"
+        },
+        {
+            "text": "Help",
+            "url": "https://help.usatoday.com/"
+        },
+        {
+            "text": "Terms of Service",
+            "url": "https://cm.usatoday.com/terms/"
+        },
+        {
+            "text": "Subscription Terms & Conditions",
+            "url": "https://cm.usatoday.com/about-your-subscription/"
+        },
+        {
+            "text": "Your California Privacy Rights/Privacy Policy",
+            "url": "https://cm.usatoday.com/privacy-policy/"
+        },
+        {
+            "text": "Privacy Policy",
+            "url": "https://cm.usatoday.com/privacy/"
+        },
+        {
+            "text": "Site Map",
+            "url": "https://www.usatoday.com/sitemap/"
+        },
+        {
+            "text": "Accessibility",
+            "url": "http://cm.usatoday.com/accessibility/"
+        },
+        {
+            "text": "Our Ethical Principles",
+            "url": "http://cm.usatoday.com/ethical-conduct/"
+        },
+        {
+            "text": "Do Not Sell My Info/Cookie Policy",
+            "url": "http://cm.usatoday.com/cookie-policy/"
+        },
+        {
+            "text": "",
+            "url": "https://www.facebook.com/usatoday"
+        },
+        {
+            "text": "",
+            "url": "https://www.twitter.com/usatoday"
+        },
+        {
+            "text": "",
+            "url": "https://go.snapchat.com/add/usatoday"
+        },
+        {
+            "text": "",
+            "url": "https://www.instagram.com/usatoday"
+        },
+        {
+            "text": "",
+            "url": "http://www.linkedin.com/company/usa-today"
+        },
+        {
+            "text": "",
+            "url": "https://www.pinterest.com/usatoday/"
+        }
+    ],
+    "img": [
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "'Civil order' breaking down in Gaza, UN official says: Updates",
+            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/28/USAT/71360256007-afp-afp-33-zc-2-r-3.jpg?crop=4585,2579,x0,y0"
+        },
+        {
+            "text": "Maine mass killing: Note from suspected shooter; 'tragic,' says Biden",
+            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/29/USAT/71367938007-xxx-mi-lewiston-shooting-38-ds.jpg?crop=2399,1350,x0,y123&quality=50&width=270"
+        },
+        {
+            "text": "House Republicans clash with colleagues over Israel, Ukraine aid",
+            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/27/USAT/71340315007-gty-1746023466.jpg?crop=6143,3457,x0,y319&quality=50&width=270"
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": "",
+            "url": null
+        },
+        {
+            "text": null,
+            "url": "https://www.gannett-cdn.com/appservices/universal-web/universal/icons/icon-instagram_24.png"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "mapping": {
+        "external_id": "internal_id",
+        "external_name": "internal_name",
+        "external_data": "internal_data",
+        "external_array": "internal_array",
+        "external_nested": {
+            "nested_field": "internal_nested_field",
+            "nested_array": "internal_nested_array"
+        }
+    }
+}
