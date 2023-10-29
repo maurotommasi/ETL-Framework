@@ -2,6 +2,10 @@
     "h1": [],
     "h2": [],
     "h3": [],
+    "h4": [],
+    "h5": [],
+    "h6": [],
+    "p": [],
     "a": [
         {
             "text": "Skip to main content",
@@ -92,12 +96,12 @@
             "url": "/"
         },
         {
-            "text": "'Civil order' breaking down in Gaza, UN official says: Updates",
+            "text": "'Civil order' breaks down in Gaza as death toll hits 8K; Biden, Netanyahu talk hostages: Updates",
             "url": "/story/news/world/israel-hamas/2023/10/29/israel-hamas-war-gaza-live-updates/71371348007/"
         },
         {
-            "text": "Maine mass killing: Note from suspected shooter; 'tragic,' says Biden",
-            "url": "/story/news/nation/2023/10/28/maine-mass-shootings-live-updates-saturday/71359607007/"
+            "text": "Maine shooting may be worst-ever affecting deaf community with 4 dead",
+            "url": "/story/news/nation/2023/10/29/maine-mass-shooting-may-be-worst-ever-affecting-us-deaf-community/71372264007/"
         },
         {
             "text": "House Republicans clash with colleagues over Israel, Ukraine aid",
@@ -120,16 +124,8 @@
             "url": "/story/news/politics/2023/10/29/mike-johnson-hunter-biden-subpoena-impeachment-inquiry/71371811007/"
         },
         {
-            "text": "Maine shooting may be worst-ever affecting deaf community with 4 deadNation",
-            "url": "/story/news/nation/2023/10/29/maine-mass-shooting-may-be-worst-ever-affecting-us-deaf-community/71372264007/"
-        },
-        {
             "text": "Former NHL player dies after 'freak accident' during game in EnglandNHL",
             "url": "/story/sports/nhl/2023/10/29/adam-johnson-former-penguins-player-dies-skate-cut-england/71371172007/"
-        },
-        {
-            "text": "Burnout and deadly errors: America's broken pharmacy system in revoltInvestigations",
-            "url": "/story/news/investigations/2023/10/26/pharmacy-chains-dangerous-conditions-medication-errors/71153960007/"
         },
         {
             "text": "Two dead, 18 injured in Ybor City, Florida, shootingNation",
@@ -140,8 +136,16 @@
             "url": "/story/news/politics/elections/2023/10/29/chris-christie-donald-trump-second-term-2024-presidential/71372181007/"
         },
         {
-            "text": "Live updates: Cowboys thoroughly dominating Rams at AT&T StadiumNFL",
-            "url": "/story/sports/nfl/2023/10/29/nfl-week-9-cowboys-rams-updates-score-highlights/71359446007/"
+            "text": "Vikings fear QB might have suffered season-ending injuryMinnesota Vikings",
+            "url": "/story/sports/nfl/vikings/2023/10/29/kirk-cousins-injury-minnesota-vikings-quarterback-ankle/71374407007/"
+        },
+        {
+            "text": "See Jessica Alba, more celeb Halloween costumesCelebrities",
+            "url": "/picture-gallery/entertainment/celebrities/2023/10/29/halloween-2023-celebrity-costumes/71346296007/"
+        },
+        {
+            "text": "Gas prices keep dropping amid Israel-Hamas warMoney",
+            "url": "/story/money/2023/10/29/gas-prices-down-israel-hamas-war/71374004007/"
         },
         {
             "text": "Moderate is a myth. By electing Speaker Johnson, GOP goes full MAGA.Columnists",
@@ -152,16 +156,16 @@
             "url": "/story/money/cars/2023/10/29/mpg-standards-car-truck-fuel-economy/71349965007/"
         },
         {
-            "text": "The best moments from Nate Bargatze's 'SNL' hosting gigTV",
-            "url": "/story/entertainment/tv/2023/10/29/snl-nate-bargatze-best-moments-monologue/71371614007/"
+            "text": "Gay drama 'Fellow Travelers' doesn't shy away from sex. Here's why.TV",
+            "url": "/story/entertainment/tv/2023/10/26/fellow-travelers-showtime-series-gay-romance/71302617007/"
         },
         {
-            "text": "'Billions' of farewells, finance titan face-off in drama series finaleTV",
-            "url": "/story/entertainment/tv/2023/10/29/billions-series-finale-recap/71305636007/"
+            "text": "NFL Sunday Ticket streaming problems? You're not aloneNFL",
+            "url": "/story/sports/nfl/2023/10/29/nfl-sunday-ticket-streaming-problems-youtube/71374429007/"
         },
         {
-            "text": "Schwarzenegger says Manchin 'stands out' as 2024 pick, knocks Trump, BidenElections",
-            "url": "/story/news/politics/elections/2023/10/29/schwarzenegger-manchin-2024-knocks-trump-biden/71372169007/"
+            "text": "Burnout and deadly errors: America's broken pharmacy system in revoltInvestigations",
+            "url": "/story/news/investigations/2023/10/26/pharmacy-chains-dangerous-conditions-medication-errors/71153960007/"
         },
         {
             "text": "Help",
@@ -234,12 +238,12 @@
             "url": null
         },
         {
-            "text": "'Civil order' breaking down in Gaza, UN official says: Updates",
-            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/28/USAT/71360256007-afp-afp-33-zc-2-r-3.jpg?crop=4585,2579,x0,y0"
+            "text": "'Civil order' breaks down in Gaza as death toll hits 8K; Biden, Netanyahu talk hostages: Updates",
+            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/29/USAT/71373458007-gty-1761637367.jpg?crop=5759,3240,x0,y0"
         },
         {
-            "text": "Maine mass killing: Note from suspected shooter; 'tragic,' says Biden",
-            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/29/USAT/71367938007-xxx-mi-lewiston-shooting-38-ds.jpg?crop=2399,1350,x0,y123&quality=50&width=270"
+            "text": "Maine shooting may be worst-ever affecting deaf community with 4 dead",
+            "url": "https://www.gannett-cdn.com/authoring/authoring-images/2023/10/28/USAT/71362371007-xxx-mi-lewiston-shooting-31-ds.jpg?crop=2399,1351,x0,y124&quality=50&width=270"
         },
         {
             "text": "House Republicans clash with colleagues over Israel, Ukraine aid",
@@ -293,5 +297,6 @@
             "text": null,
             "url": "https://www.gannett-cdn.com/appservices/universal-web/universal/icons/icon-instagram_24.png"
         }
-    ]
+    ],
+    "date_time": "2023-10-30 00:00:42.848317"
 }

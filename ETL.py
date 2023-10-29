@@ -4,15 +4,18 @@ import requests
 import time
 from bs4 import BeautifulSoup
 import os
-import urllib.parse
+import threading
+from datetime import datetime
 
 #pip install requests beautifulsoup4
 class ETL:
 
-    def __init__(self, name, pause_seconds = 24 * 3600):
-        self.name = name
-        self.pause_seconds = pause_seconds
+    def __init__(self, name):
+        self.name = name        
 
+    def get_name(self):
+        return self.name
+    
     class Source:
 
         class DataSource:
@@ -53,7 +56,7 @@ class ETL:
                 self.encoder = None
             def set_html(self, mapping_url):
                 self.encoder = {
-                    "encoder_type": "json",
+                    "encoder_type": self.html,
                     "encoder_mapping": self.__decode_mapping_json(mapping_url)
                 }
             
@@ -62,7 +65,7 @@ class ETL:
             
             def set_json(self, mapping_url):
                 self.encoder = {
-                    "encoder_type": "json",
+                    "encoder_type": self.json,
                     "encoder_mapping": self.__decode_mapping_json(mapping_url)
                 }
             
@@ -82,7 +85,7 @@ class ETL:
             def get_encoder(self):
                 return self.encoder
             
-        def __init__(self, _source_name):
+        def __init__(self, _source_name = "NO_NAME"):
             self.source_name = _source_name
             self.data_source = None
             self.encoder = None
@@ -102,55 +105,88 @@ class ETL:
             
     class Extract():
 
-        def __init__(self, source):
+        def __init__(self, name, source):
+            self.name = name
             self.source = source
+            self.running = True
+            self.threads = []
+
+        def stop_extraction(self):
+            self.running = False
+
+        def resume_extraction(self):
+            self.running = True
+
+        def getThreads(self):
+            return self.threads
         
-        def extract_text_from_website(self):
+        def queue(self, save_obj, pause_seconds = 3600):
+            print(f"Queuing for {self.name}")
+            print(self.source.get_encoder()['encoder_type'])
+            if self.source.get_encoder()['encoder_type'] == 'html':
+                extraction_thread = threading.Thread(target=self.extract_text_from_website, args=(save_obj, pause_seconds))
+                extraction_thread.start()
+                self.threads.append(extraction_thread)
+
+        def extract_text_from_website(self, save_obj, pause_seconds):
             try:
-                # Send a GET request to the URL
-                response = requests.get(self.source.get_data_source())
-                tags_to_extract = self.source.get_encoder()['encoder_mapping']['mapping']
-                # Check if the request was successful
-                if response.status_code == 200:
-                    # Parse the HTML content of the page
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    
-                    # Extract text based on specified tags
-                    extracted_text = {}
-                    for tag in tags_to_extract:
-                        elements = soup.find_all(tag)
-                        tag_extracted_text = []
-                        for element in elements:
-                            text_content = element.get_text(strip=True)
-                            # Get URL if available
-                            url = None
-                            if element.name == "a" and element.get("href"):
-                                url = element.get("href")
-                            if element.name == "img" and element.get("src"):
-                                url = element.get("src")
-                                text_content = element.get("alt")
-                            # Append the text content and URL to the list
-                            tag_extracted_text.append({"text": text_content, "url": url})
-                        extracted_text[tag] = tag_extracted_text
-                    return extracted_text
-                    
-                else:
-                    print("Error: Unable to fetch the webpage. Status code:", response.status_code)
-                    return None
-            
+                print(f"Start extraction for {self.name}")
+                while self.running:
+                    print(f'Extraction "{self.name}"...')
+                    # Send a GET request to the URL
+                    response = requests.get(self.source.get_data_source())
+                    tags_to_extract = self.source.get_encoder()['encoder_mapping']['mapping']
+                    # Check if the request was successful
+                    if response.status_code == 200:
+                        # Parse the HTML content of the page
+                        try:
+                            soup = BeautifulSoup(response.content, 'html.parser')
+                            # Extract text based on specified tags
+                            extracted_text = {}
+                            for tag in tags_to_extract:
+                                elements = soup.find_all(tag)
+                                tag_extracted_text = []
+                                for element in elements:
+                                    text_content = element.get_text(strip=True)
+                                    # Get URL if available
+                                    url = None
+                                    if element.name == "a" and element.get("href"):
+                                        url = element.get("href")
+                                    if element.name == "img" and element.get("src"):
+                                        url = element.get("src")
+                                        text_content = element.get("alt")
+                                    # Append the text content and URL to the list
+                                    tag_extracted_text.append({"text": text_content, "url": url})
+                                extracted_text[tag] = tag_extracted_text
+                            extracted_text['date_time'] = str(datetime.now())    
+                            print(f'Extraction "{self.name}" completed.')
+                            print(f'Saving/Uploading "{self.name}"...')
+                            self.__save(extracted_text, self.name, save_obj)
+                            print(f'"{self.name}" correctly saved/uploaded')
+                        except Exception as e:
+                            print("Error:", e)
+                            with open("./log.txt", 'a+') as file:
+                                file.write(str(datetime.now()) +  ' ' + str(e) + "\n")
+                        time.sleep(pause_seconds)
+                    else:
+                        print("Error: Unable to fetch the webpage. Status code:", response.status_code)
+                        with open("./log.txt", 'a+') as file:
+                                file.write(str(datetime.now()) +  ' ' + str(e) + "\n")
+                        return None
             except Exception as e:
                 print("Error:", e)
                 return None
             
-    def save(self, data, saveObj):
-        destination_type = saveObj['type']
-        if destination_type == 'json':
-            path = saveObj['path']
-            # Save the dictionary into a JSON file
-            if not os.path.exists(os.path.dirname(path)):
-                os.makedirs(os.path.dirname(path))
-            with open(saveObj['path'], "w") as json_file:
-                json.dump(data, json_file, indent=4)
+        def __save(self, data, name, saveObj):
+            destination_type = saveObj['type']
+            if destination_type == 'json':
+                path = saveObj['path']
+                path = f'istances/{name.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")}/{path}'
+                # Save the dictionary into a JSON file
+                if not os.path.exists(os.path.dirname(path)):
+                    os.makedirs(os.path.dirname(path))
+                with open(path, "w") as json_file:
+                    json.dump(data, json_file, indent=4)
 
     class Utils:
 
@@ -159,3 +195,22 @@ class ETL:
 
         def urlToFolder(self, url):
             return url.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")
+       
+        def runThreads(self, extraction_list):
+            for extraction in extraction_list:
+                for thread in extraction.getThreads():
+                    try:
+                        thread.join()
+                    except KeyError as err:
+                        print("Error: ", err)
+                        self.append_to_file("./log.txt",str(datetime.now()) +  ' ' + str(err))
+
+        def append_to_file(file_path, content):
+            try:
+                # Open the file in append mode ('a+')
+                with open(file_path, 'a+') as file:
+                    # Write the content to the file
+                    file.write(content + "\n")  # Add a newline after the appended content
+                print("Content has been successfully appended to the file.")
+            except Exception as e:
+                print("Error:", e)
