@@ -175,7 +175,7 @@ class ETL:
             except Exception as e:
                 print("Error:", e)
                 return None
-            
+        
         def __save(self, data, name, saveObj):
             destination_type = saveObj['type']
             if destination_type == 'json':
