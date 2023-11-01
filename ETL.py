@@ -7,6 +7,7 @@ from modules.Encoder import Encoder
 from modules.Loader import Loader
 
 import threading
+import time
 
 class ETL():
 
@@ -26,8 +27,8 @@ class ETL():
     def create_datasource(self, ID_datasource, data_source_config):
         self.data_sources[ID_datasource] = DataSource(ID_datasource, data_source_config)
     
-    def create_encoder(self, ID_encoder, encoder_type, encoder_mapping):
-        self.encoders[ID_encoder] = Encoder(ID_encoder, encoder_type, encoder_mapping)
+    def create_encoder(self, ID_encoder, encoder_map):
+        self.encoders[ID_encoder] = Encoder(ID_encoder, encoder_map)
 
     def create_ingestion(self, ID_ingestion):
         self.ingestions[ID_ingestion] = Ingestion(ID_ingestion)
@@ -38,8 +39,8 @@ class ETL():
     def create_loader(self, ID_loader, save_config):
         self.loaders[ID_loader] = Loader(ID_loader, save_config)
 
-    def create_control(self, ID_control):
-        self.controls[ID_control] = Control(ID_control)
+    def create_control(self, ID_control, pause = 3600, pause_if_error = 3600):
+        self.controls[ID_control] = Control(ID_control, pause, pause_if_error)
 
     def create_all(self, ID):
         self.data_sources[ID] = DataSource(ID)
@@ -64,7 +65,7 @@ class ETL():
         self.processes[ID_process].set_ingestion(self.ingestions[ID_ingestion])
 
     def __link_ingestion_to_loader(self, ID_ingestion, ID_loader):
-        self.loaders[ID_loader].set_data(self.ingestions[ID_ingestion])
+        self.loaders[ID_loader].set_data(self.ingestions[ID_ingestion].data)
 
     def __link_control_to_loader(self, ID_control, ID_loader):
         self.loaders[ID_loader].set_control(self.controls[ID_control])
@@ -115,7 +116,7 @@ class ETL():
 
         for flow in self.flow['flow_list']:
             
-            print(f'Flow index: {flow_index} saved and reeady to be run.')
+            print(f'Flow index: {flow_index} saved and ready to be run.')
             # Make flow connections
             
             self.__link_encoder_to_datasource(flow["ID_encoder"], flow["ID_datasource"])
@@ -139,32 +140,35 @@ class ETL():
 
     def __batch_run(self, ingestion, process, loader):    
 
-        # Ingestion
-        
-        print(f'Running Ingestion {ingestion.ID}...')
-        
-        encoder = ingestion.data_source.get_encoder().get_encoder()
-        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'html' else None
-        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'json' else None
-        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'csv' else None
-        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'xml' else None
-        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'plain_text' else None
+        while True:
+            # Ingestion
+            
+            print(f'Running Ingestion {ingestion.ID}...')
+            
+            encoder = ingestion.data_source.get_encoder().get_encoder()
+            print(encoder)
+            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'html' else None
+            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'json' else None
+            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'csv' else None
+            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'xml' else None
+            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'plain_text' else None
+            print(ingestion.data)
+            print(f'Ingestion {ingestion.ID} successfully completed!')
 
-        print(f'Ingestion {ingestion.ID} successfully completed!')
+            # Process
 
-        # Process
+            if process is not None:
+                if process.transformation_function is not None:
+                    print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
+                    data = process.execute(data) 
+                    print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
 
-        if process is not None:
-            if process.transformation_function is not None:
-                print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
-                data = process.execute(data) 
-                print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
+            # Loader  
+            
+            print(f'Loading data from Ingestion {ingestion.ID}...')
 
+            loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
 
-        # Loader  
-        
-        print(f'Loading data from Ingestion {ingestion.ID}...')
+            print(f'Loaded data from Ingestion {ingestion.ID}!')
 
-        loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
-
-        print(f'Loaded data from Ingestion {ingestion.ID}!')
+            time.sleep(loader.control.pause)

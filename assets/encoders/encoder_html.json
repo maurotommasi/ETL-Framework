@@ -1,4 +1,5 @@
 {
+    "encoder_type": "html",
     "tags": ["h1", "h2", "h3", "h4", "h5", "h6", "p", "a", "img"],
     "mapping": {
         "h1": "h1",
