@@ -61,17 +61,11 @@ class ETL():
     def __link_control_to_ingestion(self, ID_control, ID_ingestion):
         self.ingestions[ID_ingestion].set_control(self.controls[ID_control])
 
-    def __link_ingestion_to_process(self, ID_ingestion, ID_process):
-        self.processes[ID_process].set_ingestion(self.ingestions[ID_ingestion])
-
     def __link_ingestion_to_loader(self, ID_ingestion, ID_loader):
         self.loaders[ID_loader].set_data(self.ingestions[ID_ingestion].data)
 
     def __link_control_to_loader(self, ID_control, ID_loader):
         self.loaders[ID_loader].set_control(self.controls[ID_control])
-
-    def __link_process_to_loader(self, ID_process, ID_loader):
-        self.loaders[ID_loader].set_data(self.processes[ID_process])
 
     # Flow Control
 
@@ -122,10 +116,8 @@ class ETL():
             self.__link_encoder_to_datasource(flow["ID_encoder"], flow["ID_datasource"])
             self.__link_datasource_to_ingestion(flow["ID_datasource"], flow["ID_ingestion"])
             self.__link_control_to_ingestion(flow["ID_control"], flow["ID_ingestion"])
-            if "ID_process" not in flow:
+            if "ID_process" in flow:
                 process = self.processes[flow["ID_process"]]
-                self.__link_ingestion_to_process(flow["ID_ingestion"], flow["ID_process"]) 
-                self.__link_process_to_loader(flow["ID_process"], flow["ID_loader"])
             else:
                 process = None
                 self.__link_ingestion_to_loader(flow["ID_ingestion"], flow["ID_loader"])
@@ -146,27 +138,28 @@ class ETL():
             print(f'Running Ingestion {ingestion.ID}...')
             
             encoder = ingestion.data_source.get_encoder().get_encoder()
-            print(encoder)
             ingestion.extract_text_from_website() if encoder['encoder_type'] == 'html' else None
             ingestion.extract_text_from_website() if encoder['encoder_type'] == 'json' else None
             ingestion.extract_text_from_website() if encoder['encoder_type'] == 'csv' else None
             ingestion.extract_text_from_website() if encoder['encoder_type'] == 'xml' else None
             ingestion.extract_text_from_website() if encoder['encoder_type'] == 'plain_text' else None
-            print(ingestion.data)
+
+            data = ingestion.data
+
             print(f'Ingestion {ingestion.ID} successfully completed!')
 
             # Process
 
             if process is not None:
-                if process.transformation_function is not None:
+                if len(process.function_list) > 0:
                     print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
-                    data = process.execute_list(data) 
+                    data = process.execute(data) 
                     print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
 
             # Loader  
             
             print(f'Loading data from Ingestion {ingestion.ID}...')
-
+            loader.set_data(data)
             loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
 
             print(f'Loaded data from Ingestion {ingestion.ID}!')

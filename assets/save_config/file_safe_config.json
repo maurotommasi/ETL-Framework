@@ -1,5 +1,5 @@
 {
     "loader_destination_type": "file",
-    "loader_destination_format": "csv",
-    "loader_destination_path": "export/data.csv"
+    "loader_destination_format": "json",
+    "loader_destination_path": "export/data.json"
 }
