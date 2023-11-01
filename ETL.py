@@ -1,215 +1,170 @@
-import mysql.connector
-import json
-import requests
-import time
-from bs4 import BeautifulSoup
-import os
-import threading
-from datetime import datetime
+from modules.DataSource import DataSource
+from modules.Ingestion import Ingestion
+from modules.Utils import Utils
+from modules.Process import Process
+from modules.Control import Control
+from modules.Encoder import Encoder
+from modules.Loader import Loader
 
-#pip install requests beautifulsoup4
-class ETL:
+import threading
+
+class ETL():
 
     def __init__(self, name):
         self.name = name        
+        self.data_sources = {}
+        self.ingestions =  {}
+        self.processes = {}
+        self.encoders = {}
+        self.loaders = {}
+        self.controls = {}
+        self.flow = {}
+        self.threads = []
 
-    def get_name(self):
-        return self.name
+    # Creation of ETL Objects
+
+    def create_datasource(self, ID_datasource, data_source_config):
+        self.data_sources[ID_datasource] = DataSource(ID_datasource, data_source_config)
     
-    class Source:
+    def create_encoder(self, ID_encoder, encoder_type, encoder_mapping):
+        self.encoders[ID_encoder] = Encoder(ID_encoder, encoder_type, encoder_mapping)
 
-        class DataSource:
+    def create_ingestion(self, ID_ingestion):
+        self.ingestions[ID_ingestion] = Ingestion(ID_ingestion)
 
-            def __init__(self):
-                self.data_source = None  # Initialize connection as None here
+    def create_process(self, ID_process):
+        self.processes[ID_process] = Process(ID_process)
 
-            def set_url(self, url):
-                self.data_source = url
-                
-            def set_mysql(self, host, username, password, database):
-                try:
-                    # Establish a connection to the MySQL database
-                    connection = mysql.connector.connect(
-                        host=host,
-                        user=username,
-                        password=password,
-                        database=database
-                    )
+    def create_loader(self, ID_loader, save_config):
+        self.loaders[ID_loader] = Loader(ID_loader, save_config)
 
-                    if connection.is_connected():
-                        print("Connected to MySQL database")
-                        self.data_source = connection
+    def create_control(self, ID_control):
+        self.controls[ID_control] = Control(ID_control)
 
-                except mysql.connector.Error as err:
-                    print("Error: ", err)
+    def create_all(self, ID):
+        self.data_sources[ID] = DataSource(ID)
+        self.encoders[ID] = Encoder(ID)
+        self.ingestions[ID] = Ingestion(ID)
+        self.processes[ID] = Process(ID)
+        self.loaders[ID] = Loader(ID)
+        self.loaders[ID] = Control(ID)
+  
+    # Link the ETL Objects
 
-            def get_data_source(self):
-                return self.data_source
-            
-        class Encoder:
+    def __link_encoder_to_datasource(self, ID_encoder, ID_datasource):
+        self.data_sources[ID_datasource].set_encoder(self.encoders[ID_encoder])
 
-            def __init__(self):
-                self.html = 'html'
-                self.plain_text = 'plain_text'
-                self.json = 'json'
-                self.xml = 'xml'
-                self.encoder = None
-            def set_html(self, mapping_url):
-                self.encoder = {
-                    "encoder_type": self.html,
-                    "encoder_mapping": self.__decode_mapping_json(mapping_url)
-                }
-            
-            def set_plain_text(self):
-                self.encoder = self.plain_text
-            
-            def set_json(self, mapping_url):
-                self.encoder = {
-                    "encoder_type": self.json,
-                    "encoder_mapping": self.__decode_mapping_json(mapping_url)
-                }
-            
-            def __decode_mapping_json(self, file_path):
-                try:
-                    with open(file_path, 'r') as json_file:
-                        # Load JSON data from the file
-                        return json.load(json_file)
-                except FileNotFoundError:
-                    print("File not found.")
-                except json.JSONDecodeError:
-                    print("Invalid JSON format in the file.")
+    def __link_datasource_to_ingestion(self, ID_datasource, ID_ingestion):
+        self.ingestions[ID_ingestion].set_data_source(self.data_sources[ID_datasource])
+
+    def __link_control_to_ingestion(self, ID_control, ID_ingestion):
+        self.ingestions[ID_ingestion].set_control(self.controls[ID_control])
+
+    def __link_ingestion_to_process(self, ID_ingestion, ID_process):
+        self.processes[ID_process].set_ingestion(self.ingestions[ID_ingestion])
+
+    def __link_ingestion_to_loader(self, ID_ingestion, ID_loader):
+        self.loaders[ID_loader].set_data(self.ingestions[ID_ingestion])
+
+    def __link_control_to_loader(self, ID_control, ID_loader):
+        self.loaders[ID_loader].set_control(self.controls[ID_control])
+
+    def __link_process_to_loader(self, ID_process, ID_loader):
+        self.loaders[ID_loader].set_data(self.processes[ID_process])
+
+    # Flow Control
+
+    def set_flow_from_url(self, flow_mapping_url):
+        self.flow = Utils().read_json(flow_mapping_url)
+
+        """
+        Flow Json File Sample:
+
+        {
+            "flow_list": [
+                {
+                    "ID_encoder": ID_encoder,
+                    "ID_datasource": ID_datasource,
+                    "ID_ingestion": ID_ingestion,
+                    "ID_process": ID_process, # Can be Null
+                    "ID_loader": ID_loader,
+                    "ID_control": ID_control
+                },
+                {
+                    "ID_encoder": ID_encoder,
+                    "ID_datasource": ID_datasource,
+                    "ID_ingestion": ID_ingestion,
+                    "ID_process": ID_process, # Can be Null
+                    "ID_loader": ID_loader,
+                    "ID_control": ID_control
+                },
+            ]
+        }
+
+        Every flow will be a thread
+        """
     
-            def set_xml(self):
-                self.encoder = self.xml
+    def set_flow(self, flow):
+        self.flow = flow
+
+    def start(self):
+
+        print("Linking Pipeline flows")
+
+        flow_index = 1
+
+        for flow in self.flow['flow_list']:
             
-            def get_encoder(self):
-                return self.encoder
+            print(f'Flow index: {flow_index} saved and reeady to be run.')
+            # Make flow connections
             
-        def __init__(self, _source_name = "NO_NAME"):
-            self.source_name = _source_name
-            self.data_source = None
-            self.encoder = None
+            self.__link_encoder_to_datasource(flow["ID_encoder"], flow["ID_datasource"])
+            self.__link_datasource_to_ingestion(flow["ID_datasource"], flow["ID_ingestion"])
+            self.__link_control_to_ingestion(flow["ID_control"], flow["ID_ingestion"])
+            if "ID_process" not in flow:
+                process = self.processes[flow["ID_process"]]
+                self.__link_ingestion_to_process(flow["ID_ingestion"], flow["ID_process"]) 
+                self.__link_process_to_loader(flow["ID_process"], flow["ID_loader"])
+            else:
+                process = None
+                self.__link_ingestion_to_loader(flow["ID_ingestion"], flow["ID_loader"])
+            self.__link_control_to_loader(flow["ID_control"], flow["ID_loader"])
 
-        def set_data_source(self, data_source = None, encoder = None):
-            self.data_source = data_source
-            self.encoder = encoder
+            # Create thread to run the ETL pipeline
+            self.threads.append(threading.Thread(target=self.__batch_run, args=(self.ingestions[flow["ID_ingestion"]], process, self.loaders[flow["ID_loader"]])))
 
-        def get_data_source(self):
-            return self.data_source.get_data_source()
+        for thread in self.threads:
+            thread.start()
+            thread.join()
+
+    def __batch_run(self, ingestion, process, loader):    
+
+        # Ingestion
         
-        def get_encoder(self):
-            return self.encoder.get_encoder()
+        print(f'Running Ingestion {ingestion.ID}...')
         
-        def get_source_name(self):
-            return self.source_name
-            
-    class Extract():
+        encoder = ingestion.data_source.get_encoder().get_encoder()
+        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'html' else None
+        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'json' else None
+        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'csv' else None
+        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'xml' else None
+        data = ingestion.extract_text_from_website() if encoder['encoder_type'] == 'plain_text' else None
 
-        def __init__(self, name, source):
-            self.name = name
-            self.source = source
-            self.running = True
-            self.threads = []
+        print(f'Ingestion {ingestion.ID} successfully completed!')
 
-        def stop_extraction(self):
-            self.running = False
+        # Process
 
-        def resume_extraction(self):
-            self.running = True
+        if process is not None:
+            if process.transformation_function is not None:
+                print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
+                data = process.execute(data) 
+                print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
 
-        def getThreads(self):
-            return self.threads
+
+        # Loader  
         
-        def queue(self, save_obj, pause_seconds = 3600):
-            print(f"Queuing for {self.name}")
-            if self.source.get_encoder()['encoder_type'] == 'html':
-                extraction_thread = threading.Thread(target=self.extract_text_from_website, args=(save_obj, pause_seconds))
-                extraction_thread.start()
-                self.threads.append(extraction_thread)
+        print(f'Loading data from Ingestion {ingestion.ID}...')
 
-        def extract_text_from_website(self, save_obj, pause_seconds):
-            try:
-                print(f"Start extraction for {self.name}")
-                while self.running:
-                    print(f'Extraction "{self.name}"...')
-                    # Send a GET request to the URL
-                    response = requests.get(self.source.get_data_source())
-                    tags_to_extract = self.source.get_encoder()['encoder_mapping']['mapping']
-                    # Check if the request was successful
-                    if response.status_code == 200:
-                        # Parse the HTML content of the page
-                        try:
-                            soup = BeautifulSoup(response.content, 'html.parser')
-                            # Extract text based on specified tags
-                            extracted_text = {}
-                            for tag in tags_to_extract:
-                                elements = soup.find_all(tag)
-                                tag_extracted_text = []
-                                for element in elements:
-                                    text_content = element.get_text(strip=True)
-                                    # Get URL if available
-                                    url = None
-                                    if element.name == "a" and element.get("href"):
-                                        url = element.get("href")
-                                    if element.name == "img" and element.get("src"):
-                                        url = element.get("src")
-                                        text_content = element.get("alt")
-                                    # Append the text content and URL to the list
-                                    tag_extracted_text.append({"text": text_content, "url": url})
-                                extracted_text[tag] = tag_extracted_text
-                            extracted_text['date_time'] = str(datetime.now())    
-                            print(f'Extraction "{self.name}" completed.')
-                            print(f'Saving/Uploading "{self.name}"...')
-                            self.__save(extracted_text, self.name, save_obj)
-                            print(f'"{self.name}" correctly saved/uploaded')
-                        except Exception as e:
-                            print("Error:", e)
-                            with open("./log.txt", 'a+') as file:
-                                file.write(str(datetime.now()) +  ' ' + str(e) + "\n")
-                        time.sleep(pause_seconds)
-                    else:
-                        print("Error: Unable to fetch the webpage. Status code:", response.status_code)
-                        with open("./log.txt", 'a+') as file:
-                                file.write(str(datetime.now()) +  ' ' + str(e) + "\n")
-                        return None
-            except Exception as e:
-                print("Error:", e)
-                return None
-        
-        def __save(self, data, name, saveObj):
-            destination_type = saveObj['type']
-            if destination_type == 'json':
-                path = saveObj['path']
-                path = f'istances/{name.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")}/{path}'
-                # Save the dictionary into a JSON file
-                if not os.path.exists(os.path.dirname(path)):
-                    os.makedirs(os.path.dirname(path))
-                with open(path, "w") as json_file:
-                    json.dump(data, json_file, indent=4)
+        loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
 
-    class Utils:
-
-        def __init__(self):
-            None
-
-        def urlToFolder(self, url):
-            return url.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")
-       
-        def runThreads(self, extraction_list):
-            for extraction in extraction_list:
-                for thread in extraction.getThreads():
-                    try:
-                        thread.join()
-                    except KeyError as err:
-                        print("Error: ", err)
-                        self.append_to_file("./log.txt",str(datetime.now()) +  ' ' + str(err))
-
-        def append_to_file(file_path, content):
-            try:
-                # Open the file in append mode ('a+')
-                with open(file_path, 'a+') as file:
-                    # Write the content to the file
-                    file.write(content + "\n")  # Add a newline after the appended content
-                print("Content has been successfully appended to the file.")
-            except Exception as e:
-                print("Error:", e)
+        print(f'Loaded data from Ingestion {ingestion.ID}!')
