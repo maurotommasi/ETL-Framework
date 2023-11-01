@@ -126,6 +126,7 @@ class ETL():
             # Create thread to run the ETL pipeline
             self.threads.append(threading.Thread(target=self.__batch_run, args=(self.ingestions[flow["ID_ingestion"]], process, self.loaders[flow["ID_loader"]])))
 
+            flow_index += 1
         for thread in self.threads:
             thread.start()
             thread.join()
