@@ -127,10 +127,13 @@ class ETL():
             self.threads.append(threading.Thread(target=self.__batch_run, args=(self.ingestions[flow["ID_ingestion"]], process, self.loaders[flow["ID_loader"]])))
 
             flow_index += 1
+
         for thread in self.threads:
             thread.start()
-            thread.join()
 
+        for thread in self.threads:
+            thread.join()
+            
     def __batch_run(self, ingestion, process, loader):    
 
         while True:
@@ -166,3 +169,35 @@ class ETL():
             print(f'Loaded data from Ingestion {ingestion.ID}!')
 
             time.sleep(loader.control.pause)
+
+class FlowConfig:
+
+    def __init__(self):
+        self.flow_list = []
+
+    def add_flow(self, flow):
+        self.flow_list.append(flow)
+        
+    def create_flow(self, ID_datasource, ID_encoder, ID_ingestion, ID_control, ID_loader, ID_process):
+        if len(ID_process) > 0:
+            return {
+                "ID_encoder": ID_encoder,
+                "ID_datasource": ID_datasource,
+                "ID_ingestion": ID_ingestion,
+                "ID_process": ID_process,
+                "ID_loader": ID_loader,
+                "ID_control": ID_control
+            }
+        else:
+            return {
+                "ID_encoder": ID_encoder,
+                "ID_datasource": ID_datasource,
+                "ID_ingestion": ID_ingestion,
+                "ID_loader": ID_loader,
+                "ID_control": ID_control
+            }
+    
+    def get_flow_config(self):
+        return {
+            "flow_list": self.flow_list
+        }

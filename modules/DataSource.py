@@ -44,3 +44,14 @@ class DataSource:
         
     def get_encoder(self):
         return self.encoder
+    
+class DataSourceConfig:
+
+    def __init__(self):
+        None
+
+    def scraping_source_config(self, url):
+        return {
+            "source_type": "url",
+            "url": url
+        }

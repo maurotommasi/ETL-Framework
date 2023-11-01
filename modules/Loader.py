@@ -33,4 +33,14 @@ class Loader:
         else:
             print('Invalid export format specified. Supported formats: csv, excel, json, sqlite')
 
- 
+class LoaderConfig:
+
+    def __init__(self):
+        None
+
+    def json_file_loader(self, path):
+        return {
+            "loader_destination_type": "file",
+            "loader_destination_format": "json",
+            "loader_destination_path": path
+        }
