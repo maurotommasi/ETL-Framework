@@ -1,4 +1,5 @@
 {
     "source_type": "url",
+    "source_response": "plain_text",
     "url": "https://www.google.com"
 }

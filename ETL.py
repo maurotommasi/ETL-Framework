@@ -140,13 +140,8 @@ class ETL():
             # Ingestion
             
             print(f'Running Ingestion {ingestion.ID}...')
-            
-            encoder = ingestion.data_source.get_encoder().get_encoder()
 
-            # The endoder type will tell us how to read the information
-            # The input of the ingestion dependes on the return format of the data we want to achive
-
-            ingestion.from_html() if ingestion.data_source.data_source['source_type']== 'url' else None # Scraping
+            ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
 
             data = ingestion.data
 
@@ -178,7 +173,7 @@ class FlowConfig:
     def add_flow(self, flow):
         self.flow_list.append(flow)
         
-    def create_flow(self, ID_datasource, ID_encoder, ID_ingestion, ID_control, ID_loader, ID_process):
+    def create_flow(self, ID_datasource, ID_encoder, ID_ingestion, ID_control, ID_loader, ID_process = ""):
         if len(ID_process) > 0:
             return {
                 "ID_encoder": ID_encoder,

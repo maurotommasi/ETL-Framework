@@ -53,5 +53,6 @@ class DataSourceConfig:
     def scraping_source_config(self, url):
         return {
             "source_type": "url",
+            "source_response": "plain_text",
             "url": url
         }
