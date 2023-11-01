@@ -133,7 +133,7 @@ class ETL():
 
         for thread in self.threads:
             thread.join()
-            
+
     def __batch_run(self, ingestion, process, loader):    
 
         while True:
@@ -146,7 +146,7 @@ class ETL():
             # The endoder type will tell us how to read the information
             # The input of the ingestion dependes on the return format of the data we want to achive
 
-            ingestion.from_html() if encoder['encoder_type'] == 'html' else None # Scraping
+            ingestion.from_html() if ingestion.data_source.data_source['source_type']== 'url' else None # Scraping
 
             data = ingestion.data
 
