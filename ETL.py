@@ -33,8 +33,8 @@ class ETL():
     def create_ingestion(self, ID_ingestion):
         self.ingestions[ID_ingestion] = Ingestion(ID_ingestion)
 
-    def create_process(self, ID_process):
-        self.processes[ID_process] = Process(ID_process)
+    def create_process(self, ID_process, function_list):
+        self.processes[ID_process] = Process(ID_process, function_list)
 
     def create_loader(self, ID_loader, save_config):
         self.loaders[ID_loader] = Loader(ID_loader, save_config)
