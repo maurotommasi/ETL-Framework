@@ -139,11 +139,11 @@ class ETL():
             print(f'Running Ingestion {ingestion.ID}...')
             
             encoder = ingestion.data_source.get_encoder().get_encoder()
-            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'html' else None
-            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'json' else None
-            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'csv' else None
-            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'xml' else None
-            ingestion.extract_text_from_website() if encoder['encoder_type'] == 'plain_text' else None
+
+            # The endoder type will tell us how to read the information
+            # The input of the ingestion dependes on the return format of the data we want to achive
+
+            ingestion.from_html() if encoder['encoder_type'] == 'html' else None # Scraping
 
             data = ingestion.data
 

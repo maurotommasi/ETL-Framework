@@ -1,0 +1,10 @@
+{
+    "api_type": "normal",
+    "api_method": "GET",
+    "api_endpoint": "url",
+    "api_param": {
+        "param1": "A",
+        "param2": "B",
+        "param3": [1,2,3]
+    }
+}

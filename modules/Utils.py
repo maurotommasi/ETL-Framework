@@ -41,3 +41,5 @@ class Utils:
                 os.makedirs(os.path.dirname(path))
             with open(path, "w") as json_file:
                 json.dump(data, json_file, indent=4)
+
+

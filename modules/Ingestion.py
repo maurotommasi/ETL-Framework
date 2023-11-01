@@ -18,7 +18,9 @@ class Ingestion():
     def set_control(self, control):
         self.control = control
 
-    def extract_text_from_website(self):
+    # Scraping
+
+    def from_html(self):
         try:
             print(f"Start extraction for {self.ID}")
             # Send a GET request to the URL
@@ -68,3 +70,6 @@ class Ingestion():
                     "ingestion_ID": self.ID   
                     })
         return extracted_text
+    
+    def from_json(self):
+        None

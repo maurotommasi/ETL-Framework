@@ -9,5 +9,6 @@ class Process:
         for function in self.function_list:
             df = function(df)
         return df
-    
-        
+
+
+
