@@ -160,7 +160,7 @@ class ETL():
             if process is not None:
                 if process.transformation_function is not None:
                     print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
-                    data = process.execute(data) 
+                    data = process.execute_list(data) 
                     print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
 
             # Loader  

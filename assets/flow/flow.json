@@ -4,7 +4,7 @@
             "ID_encoder": "EN1",
             "ID_datasource": "DS1",
             "ID_ingestion": "IN1",
-            "ID_process": "",
+            "ID_process": "PR1",
             "ID_loader": "LD1",
             "ID_control": "CN1"
         }
