@@ -32,10 +32,10 @@ class Utils:
         except json.JSONDecodeError:
             print("Invalid JSON format in the file.")
 
-    def save_function(self, path, function):
+    def save_obj(self, path, obj):
         with open(path,'wb') as file:
-            pickle.dump(function, file)
+            pickle.dump(obj, file)
 
-    def load_function(self, path):
+    def load_obj(self, path):
         with open(path,'rb') as file:
             return pickle.load(file)
