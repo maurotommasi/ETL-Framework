@@ -18,7 +18,7 @@ class Utils:
             with open(file_path, 'a+') as file:
                 # Write the content to the file
                 file.write(content + "\n")  # Add a newline after the appended content
-            print("Content has been successfully appended to the file.")
+            #print("Content has been successfully appended to the file.")
         except Exception as e:
             print("Error:", e)
 

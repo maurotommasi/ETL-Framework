@@ -8,7 +8,7 @@ from modules.Loader import Loader
 
 import threading
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class ETL():
 
@@ -41,8 +41,8 @@ class ETL():
     def create_loader(self, ID_loader, save_config):
         self.loaders[ID_loader] = Loader(ID_loader, save_config)
 
-    def create_control(self, ID_control, pause = 3600, pause_if_error = 3600):
-        self.controls[ID_control] = Control(ID_control, pause, pause_if_error)
+    def create_control(self, ID_control, pause = 3600, pause_if_error = 3600, start_datetime = datetime.now()):
+        self.controls[ID_control] = Control(ID_control, pause, pause_if_error, start_datetime)
   
     # Link the ETL Objects
 
@@ -128,35 +128,60 @@ class ETL():
             thread.join()
 
     def __batch_run(self, ingestion, process, loader):    
+        
+        dt_start = loader.control.start_from
+
+        # Skip past ingestions
+        
+        while datetime.now() > dt_start:
+            dt_start = dt_start + timedelta(seconds=loader.control.pause) 
+        
+        dt_base = dt_start
+        dt_index = 1
 
         while True:
             # Ingestion
-            self.__log(f'Running Ingestion {ingestion.ID}...') if self.log else None
 
-            ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
+            dt_ingestion = datetime.now()
 
-            data = ingestion.data
+            if dt_ingestion > dt_start:
+                
+                dt_ingestion_start = datetime.now()
 
-            self.__log(f'Ingestion {ingestion.ID} successfully completed!') if self.log else None
+                self.__log(f'Running Ingestion {ingestion.ID}...') if self.log else None
 
-            # Process
+                ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
 
-            if process is not None:
-                if len(process.function_list) > 0:
-                    self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
-                    data = process.execute(data) 
-                    self.__log(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!') if self.log else None
+                data = ingestion.data
 
-            # Loader  
-            
-            self.__log(f'Loading data from Ingestion {ingestion.ID}...') if self.log else None
-            loader.set_data(data)
-            loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
-            self.__log(f'Loaded data from Ingestion {ingestion.ID}!') if self.log else None
+                self.__log(f'Ingestion {ingestion.ID} successfully completed!') if self.log else None
 
-            self.__log(f'Next execution for {ingestion.ID} will be in {loader.control.pause} seconds') if self.log else None
-            time.sleep(loader.control.pause)
+                # Process
 
+                if process is not None:
+                    if len(process.function_list) > 0:
+                        self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
+                        data = process.execute(data) 
+                        self.__log(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!') if self.log else None
+
+                # Loader  
+
+                self.__log(f'Loading data from Ingestion {ingestion.ID}...') if self.log else None
+                loader.set_data(data)
+                loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
+                self.__log(f'Loaded data from Ingestion {ingestion.ID}!') if self.log else None
+
+
+                dt_start = dt_base + dt_index * timedelta(seconds=loader.control.pause)
+                dt_index += 1
+
+                self.__log(f'Next execution for {ingestion.ID} will be at {dt_start}') if self.log else None
+
+                time.sleep(loader.control.pause - (datetime.now() - dt_ingestion_start).total_seconds()) if datetime.now() > dt_ingestion_start else None # Free CPU
+
+            else:
+                self.__log(f"Wait for first execution at {dt_start} for {ingestion.ID}")
+                time.sleep((dt_start - dt_ingestion).total_seconds()) # Free CPU
     def __log(self, content):
         print(content)
         Utils().append_to_file('log.txt', f'{datetime.now()}: {content}')
