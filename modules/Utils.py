@@ -39,16 +39,3 @@ class Utils:
     def load_function(self, path):
         with open(path,'rb') as file:
             return pickle.load(file)
-
-    def __save(self, data, name, saveObj):
-        destination_type = saveObj['type']
-        if destination_type == 'json':
-            path = saveObj['path']
-            path = f'istances/{name.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")}/{path}'
-            # Save the dictionary into a JSON file
-            if not os.path.exists(os.path.dirname(path)):
-                os.makedirs(os.path.dirname(path))
-            with open(path, "w") as json_file:
-                json.dump(data, json_file, indent=4)
-
-
