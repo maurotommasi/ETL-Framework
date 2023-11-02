@@ -1,148 +1,54 @@
-2023-11-01 01:52:16.379582 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:16.499591 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:16.614581 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:16.730767 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:16.841315 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:16.967552 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.079347 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.195729 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.308663 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.429347 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.548705 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.673641 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.789925 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:17.900857 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.018598 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.135607 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.248220 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.371113 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.487220 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.600822 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.719796 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.837608 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:18.957664 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.074652 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.190869 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.309077 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.427283 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.544852 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.655822 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.874845 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:19.990110 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.111475 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.229438 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.348141 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.462432 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.579406 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.706900 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.821248 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:20.939112 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.054695 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.172384 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.281651 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.400102 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.519177 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.635920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.756093 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.870968 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:21.989705 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.106723 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.227442 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.349106 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.466303 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.587608 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.701773 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.814293 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:22.932353 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.044400 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.164142 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.281935 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.398860 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.513531 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.630618 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.743271 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.860613 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:23.978494 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.094933 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.210920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.332920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.451950 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.562920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.676919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.811918 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:24.934950 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.050919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.171920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.290929 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.410919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.527943 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.644920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.757919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.872919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:25.991920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.106920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.224919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.342949 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.456936 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.570933 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.689922 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:26.809934 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.002919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.117919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.239919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.359919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.480919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.599949 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.718919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.836919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:27.953927 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.069920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.187934 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.298919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.415921 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.531921 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.647918 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.764919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:28.883926 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.003918 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.221918 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.346919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.462943 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.577919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.692920 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.808919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:29.932918 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.045919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.158921 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.276919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.394919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.515919 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.631952 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 01:52:30.751921 Ingestion.__scraping() missing 1 required positional argument: 'save_obj'
-2023-11-01 13:37:48.877010 All arrays must be of the same length
-2023-11-01 13:39:28.117297 All arrays must be of the same length
-2023-11-01 13:42:45.477769 All arrays must be of the same length
-2023-11-01 13:43:40.959405 All arrays must be of the same length
-2023-11-01 13:44:35.089449 All arrays must be of the same length
-2023-11-01 13:45:39.002081 All arrays must be of the same length
-2023-11-01 13:45:49.232110 All arrays must be of the same length
-2023-11-01 13:45:59.460081 All arrays must be of the same length
-2023-11-01 13:50:47.770540 All arrays must be of the same length
-2023-11-01 13:50:58.009563 All arrays must be of the same length
-2023-11-01 13:51:08.250541 All arrays must be of the same length
-2023-11-01 13:51:18.490167 All arrays must be of the same length
-2023-11-01 13:52:09.819133 All arrays must be of the same length
-2023-11-01 13:52:20.050772 All arrays must be of the same length
-2023-11-01 13:55:15.995711 All arrays must be of the same length
-2023-11-01 13:55:26.230710 All arrays must be of the same length
-2023-11-01 13:55:36.508709 All arrays must be of the same length
-2023-11-01 13:57:36.699930 max() arg is an empty sequence
-2023-11-01 13:57:46.932957 max() arg is an empty sequence
-2023-11-01 13:58:51.051653 All arrays must be of the same length
-2023-11-01 13:59:01.325609 All arrays must be of the same length
-2023-11-01 14:00:54.250476 All arrays must be of the same length
-2023-11-01 14:01:04.490492 All arrays must be of the same length
-2023-11-01 14:08:01.359417 All arrays must be of the same length
-2023-11-01 14:08:11.614417 All arrays must be of the same length
-2023-11-02 14:31:27.400449 scraping() takes 1 positional argument but 3 were given
-2023-11-02 14:34:49.522151 scraping() missing 1 required positional argument: 'mapping_tag'
+2023-11-02 15:04:39.230769: Linking Pipeline flows for ETL Pipeline
+2023-11-02 15:04:39.231737: Running Ingestion Scraping Ingestion for https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29...
+2023-11-02 15:04:39.231737: Running Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:39.232740: Running Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:04:39.520751: Ingestion Scraping Ingestion for http://www.google.com successfully completed!
+2023-11-02 15:04:39.521739: Running Transformation Transformation Basic for HTML for Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:39.547737: Trasformation Transformation Basic for HTML for ingestion Scraping Ingestion for http://www.google.com Done!
+2023-11-02 15:04:39.660737: Ingestion Scraping Ingestion for https://edition.cnn.com successfully completed!
+2023-11-02 15:04:39.661737: Loading data from Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:39.661737: Loading data from Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:04:39.663737: Loaded data from Ingestion Scraping Ingestion for http://www.google.com!
+2023-11-02 15:04:39.664738: Next execution for Scraping Ingestion for http://www.google.com will be in 10 seconds
+2023-11-02 15:04:39.665737: Loaded data from Ingestion Scraping Ingestion for https://edition.cnn.com!
+2023-11-02 15:04:39.665737: Next execution for Scraping Ingestion for https://edition.cnn.com will be in 10 seconds
+2023-11-02 15:04:49.671587: Running Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:49.671587: Running Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:04:49.876906: Ingestion Scraping Ingestion for http://www.google.com successfully completed!
+2023-11-02 15:04:49.876906: Running Transformation Transformation Basic for HTML for Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:49.883243: Trasformation Transformation Basic for HTML for ingestion Scraping Ingestion for http://www.google.com Done!
+2023-11-02 15:04:49.883243: Loading data from Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:04:49.885244: Loaded data from Ingestion Scraping Ingestion for http://www.google.com!
+2023-11-02 15:04:49.885244: Next execution for Scraping Ingestion for http://www.google.com will be in 10 seconds
+2023-11-02 15:04:50.101620: Ingestion Scraping Ingestion for https://edition.cnn.com successfully completed!
+2023-11-02 15:04:50.102679: Loading data from Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:04:50.103656: Loaded data from Ingestion Scraping Ingestion for https://edition.cnn.com!
+2023-11-02 15:04:50.103656: Next execution for Scraping Ingestion for https://edition.cnn.com will be in 10 seconds
+2023-11-02 15:04:59.900591: Running Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:00.102717: Ingestion Scraping Ingestion for http://www.google.com successfully completed!
+2023-11-02 15:05:00.103747: Running Transformation Transformation Basic for HTML for Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:00.107747: Trasformation Transformation Basic for HTML for ingestion Scraping Ingestion for http://www.google.com Done!
+2023-11-02 15:05:00.107747: Loading data from Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:00.110035: Loaded data from Ingestion Scraping Ingestion for http://www.google.com!
+2023-11-02 15:05:00.110035: Next execution for Scraping Ingestion for http://www.google.com will be in 10 seconds
+2023-11-02 15:05:00.116061: Running Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:05:00.528548: Ingestion Scraping Ingestion for https://edition.cnn.com successfully completed!
+2023-11-02 15:05:00.528798: Loading data from Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:05:00.529811: Loaded data from Ingestion Scraping Ingestion for https://edition.cnn.com!
+2023-11-02 15:05:00.529811: Next execution for Scraping Ingestion for https://edition.cnn.com will be in 10 seconds
+2023-11-02 15:05:10.114269: Running Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:10.311579: Ingestion Scraping Ingestion for http://www.google.com successfully completed!
+2023-11-02 15:05:10.311579: Running Transformation Transformation Basic for HTML for Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:10.317551: Trasformation Transformation Basic for HTML for ingestion Scraping Ingestion for http://www.google.com Done!
+2023-11-02 15:05:10.317551: Loading data from Ingestion Scraping Ingestion for http://www.google.com...
+2023-11-02 15:05:10.318640: Loaded data from Ingestion Scraping Ingestion for http://www.google.com!
+2023-11-02 15:05:10.318640: Next execution for Scraping Ingestion for http://www.google.com will be in 10 seconds
+2023-11-02 15:05:10.607779: Running Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:05:10.717342: Ingestion Scraping Ingestion for https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29 successfully completed!
+2023-11-02 15:05:10.718561: Loading data from Ingestion Scraping Ingestion for https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29...
+2023-11-02 15:05:10.722591: Loaded data from Ingestion Scraping Ingestion for https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29!
+2023-11-02 15:05:10.722591: Next execution for Scraping Ingestion for https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29 will be in 10 seconds
+2023-11-02 15:05:11.170622: Ingestion Scraping Ingestion for https://edition.cnn.com successfully completed!
+2023-11-02 15:05:11.171651: Loading data from Ingestion Scraping Ingestion for https://edition.cnn.com...
+2023-11-02 15:05:11.172655: Loaded data from Ingestion Scraping Ingestion for https://edition.cnn.com!
+2023-11-02 15:05:11.172655: Next execution for Scraping Ingestion for https://edition.cnn.com will be in 10 seconds

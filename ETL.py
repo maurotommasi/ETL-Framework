@@ -8,10 +8,11 @@ from modules.Loader import Loader
 
 import threading
 import time
+from datetime import datetime
 
 class ETL():
 
-    def __init__(self, name):
+    def __init__(self, name, log = True):
         self.name = name        
         self.data_sources = {}
         self.ingestions =  {}
@@ -21,6 +22,7 @@ class ETL():
         self.controls = {}
         self.flow = {}
         self.threads = []
+        self.log = log
 
     # Creation of ETL Objects
 
@@ -96,13 +98,12 @@ class ETL():
 
     def start(self):
 
-        print("Linking Pipeline flows")
+        self.__log(f"Linking Pipeline flows for {self.name}") if self.log else None
 
         flow_index = 1
 
         for flow in self.flow['flow_list']:
-            
-            print(f'Flow index: {flow_index} saved and ready to be run.')
+
             # Make flow connections
             
             self.__link_encoder_to_datasource(flow["ID_encoder"], flow["ID_datasource"])
@@ -130,32 +131,35 @@ class ETL():
 
         while True:
             # Ingestion
-            
-            print(f'Running Ingestion {ingestion.ID}...')
+            self.__log(f'Running Ingestion {ingestion.ID}...') if self.log else None
 
             ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
 
             data = ingestion.data
 
-            print(f'Ingestion {ingestion.ID} successfully completed!')
+            self.__log(f'Ingestion {ingestion.ID} successfully completed!') if self.log else None
 
             # Process
 
             if process is not None:
                 if len(process.function_list) > 0:
-                    print(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...')
+                    self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
                     data = process.execute(data) 
-                    print(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!')
+                    self.__log(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!') if self.log else None
 
             # Loader  
             
-            print(f'Loading data from Ingestion {ingestion.ID}...')
+            self.__log(f'Loading data from Ingestion {ingestion.ID}...') if self.log else None
             loader.set_data(data)
             loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
+            self.__log(f'Loaded data from Ingestion {ingestion.ID}!') if self.log else None
 
-            print(f'Loaded data from Ingestion {ingestion.ID}!')
-
+            self.__log(f'Next execution for {ingestion.ID} will be in {loader.control.pause} seconds') if self.log else None
             time.sleep(loader.control.pause)
+
+    def __log(self, content):
+        print(content)
+        Utils().append_to_file('log.txt', f'{datetime.now()}: {content}')
 
 class FlowConfig:
 

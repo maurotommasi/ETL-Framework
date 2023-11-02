@@ -12,7 +12,7 @@ class Utils:
     def urlToFolder(self, url):
         return url.replace("https://", "").replace("www.", "_").replace("/", "_").lstrip("_")
 
-    def append_to_file(file_path, content):
+    def append_to_file(self, file_path, content):
         try:
             # Open the file in append mode ('a+')
             with open(file_path, 'a+') as file:
