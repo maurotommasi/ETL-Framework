@@ -6,11 +6,12 @@ import pandas as pd
 
 class Ingestion():
 
-    def __init__(self, ID):
+    def __init__(self, ID, custom_scraping = None):
         self.ID = ID
         self.data_source = None
         self.data = {}
         self.control = None
+        self.custom_scraping = custom_scraping
 
     def set_data_source(self, data_source):
         self.data_source = data_source
@@ -30,9 +31,14 @@ class Ingestion():
             # Check if the request was successful
             if response.status_code == 200:
                 # Parse the HTML content of the page
-                try:
-                    columns = ["original_tag", "mapping_tag", "text", "url", "date_time", "ingestion_ID"]   
-                    self.data = pd.DataFrame(data=self.__scraping(response, tags_to_extract, mapping),columns=columns)
+                try:  
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    if self.custom_scraping is None:
+                        columns = ["original_tag", "mapping_tag", "text", "url", "date_time", "ingestion_ID"] 
+                        self.data = pd.DataFrame(data=self.__scraping(soup, tags_to_extract, mapping),columns=columns)
+                    else:
+                        self.data = pd.DataFrame(data=self.custom_scraping(soup))
+
                 except Exception as e:
                     print("Error:", e)
                     with open("./log.txt", 'a+') as file:
@@ -45,10 +51,7 @@ class Ingestion():
         except Exception as e:
             print("Error:", e)
     
-    def __scraping(self, response, tags_to_extract, mapping):
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # Extract text based on specified tags
+    def __scraping(self, soup, tags_to_extract, mapping):
         extracted_text = []
         for tag in tags_to_extract:
             elements = soup.find_all(tag)

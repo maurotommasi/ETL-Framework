@@ -30,8 +30,8 @@ class ETL():
     def create_encoder(self, ID_encoder, encoder_map):
         self.encoders[ID_encoder] = Encoder(ID_encoder, encoder_map)
 
-    def create_ingestion(self, ID_ingestion):
-        self.ingestions[ID_ingestion] = Ingestion(ID_ingestion)
+    def create_ingestion(self, ID_ingestion, custom_function = None):
+        self.ingestions[ID_ingestion] = Ingestion(ID_ingestion, custom_function)
 
     def create_process(self, ID_process, function_list):
         self.processes[ID_process] = Process(ID_process, function_list)
@@ -41,14 +41,6 @@ class ETL():
 
     def create_control(self, ID_control, pause = 3600, pause_if_error = 3600):
         self.controls[ID_control] = Control(ID_control, pause, pause_if_error)
-
-    def create_all(self, ID):
-        self.data_sources[ID] = DataSource(ID)
-        self.encoders[ID] = Encoder(ID)
-        self.ingestions[ID] = Ingestion(ID)
-        self.processes[ID] = Process(ID)
-        self.loaders[ID] = Loader(ID)
-        self.loaders[ID] = Control(ID)
   
     # Link the ETL Objects
 

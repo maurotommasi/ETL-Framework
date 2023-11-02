@@ -144,3 +144,5 @@
 2023-11-01 14:01:04.490492 All arrays must be of the same length
 2023-11-01 14:08:01.359417 All arrays must be of the same length
 2023-11-01 14:08:11.614417 All arrays must be of the same length
+2023-11-02 14:31:27.400449 scraping() takes 1 positional argument but 3 were given
+2023-11-02 14:34:49.522151 scraping() missing 1 required positional argument: 'mapping_tag'

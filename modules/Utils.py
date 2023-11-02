@@ -2,6 +2,7 @@ from datetime import datetime
 import os
 import json
 import threading
+import pickle
 
 class Utils:
 
@@ -30,6 +31,14 @@ class Utils:
             print("File not found.")
         except json.JSONDecodeError:
             print("Invalid JSON format in the file.")
+
+    def save_function(self, path, function):
+        with open(path,'wb') as file:
+            pickle.dump(function, file)
+
+    def load_function(self, path):
+        with open(path,'rb') as file:
+            return pickle.load(file)
 
     def __save(self, data, name, saveObj):
         destination_type = saveObj['type']
