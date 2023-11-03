@@ -1,17 +1,17 @@
 # Import necessary modules and classes
-from modules.DataSource import DataSource
-from modules.Ingestion import Ingestion
-from modules.Utils import Utils
-from modules.Process import Process
-from modules.Control import Control
-from modules.Encoder import Encoder
-from modules.Loader import Loader
+from .modules.DataSource import DataSource
+from .modules.Ingestion import Ingestion
+from .modules.Utils import Utils
+from .modules.Process import Process
+from .modules.Control import Control
+from .modules.Encoder import Encoder
+from .modules.Loader import Loader
 import threading
 import time
 from datetime import datetime, timedelta
 
 # Define the main ETL class
-class ETL():
+class Pipeline():
 
     # Initialize the ETL class with necessary attributes
     def __init__(self, name, log = True):
@@ -41,8 +41,8 @@ class ETL():
     def create_process(self, ID_process, function_list):
         self.processes[ID_process] = Process(ID_process, function_list)
 
-    def create_loader(self, ID_loader, save_config):
-        self.loaders[ID_loader] = Loader(ID_loader, save_config)
+    def create_loader(self, ID_loader, save_config, custom_function = None):
+        self.loaders[ID_loader] = Loader(ID_loader, save_config, custom_function)
 
     def create_control(self, ID_control, pause = 3600, pause_if_error = 3600, start_datetime = datetime.now()):
         self.controls[ID_control] = Control(ID_control, pause, pause_if_error, start_datetime)
@@ -138,26 +138,33 @@ class ETL():
                 
                 dt_ingestion_start = datetime.now()
                 self.__log(f'Running Ingestion {ingestion.ID}...') if self.log else None
+                ingestion.from_custom_function() if ingestion.data_source.data_source['source_type'] == 'custom' else None # Scraping
                 ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
-                ingestion.from_mysql() if ingestion.data_source.data_source['source_type'] == 'mysql' else None # MySQL
+                ingestion.from_query_mysql() if ingestion.data_source.data_source['source_type'] == 'query_mysql' else None # Query MySQL
                 data = ingestion.data
                 self.__log(f'Ingestion {ingestion.ID} successfully completed!') if self.log else None
 
-                # Process
+                if len(data) > 0:
+                    # Process
 
-                process = loader.process
-                if process is not None:
-                    if len(process.function_list) > 0:
-                        self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
-                        data = process.execute(data) 
-                        self.__log(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!') if self.log else None
+                    process = loader.process
+                    if process is not None:
+                        if len(process.function_list) > 0:
+                            self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
+                            data = process.execute(data) 
+                            self.__log(f'Trasformation {process.ID} for ingestion {ingestion.ID} Done!') if self.log else None
 
-                # Loader  
+                    # Loader  
 
-                self.__log(f'Loading data from Ingestion {ingestion.ID}...') if self.log else None
-                loader.set_data(data)
-                loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
-                self.__log(f'Loaded data from Ingestion {ingestion.ID}!') if self.log else None
+                    self.__log(f'Loading data from Ingestion {ingestion.ID}...') if self.log else None
+                    loader.set_data(data)
+                    loader.save_to_file(loader.save_config["loader_destination_path"], loader.save_config["loader_destination_format"]) if loader.save_config["loader_destination_type"] == "file" else None
+                    loader.run_custom_loader() if loader.save_config["loader_destination_type"] == "custom" else None
+                    self.__log(f'Loaded data from Ingestion {ingestion.ID}!') if self.log else None
+
+                else:
+
+                    self.__log(f'No Data for Ingestion {ingestion.ID}...') if self.log else None
 
                 # Feedback Control
 

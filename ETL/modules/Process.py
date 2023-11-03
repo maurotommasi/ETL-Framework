@@ -1,4 +1,5 @@
-import pandas as pd
+from . import __custom_dependencies
+
 class Process:
 
     def __init__(self, ID, function_list):
@@ -6,8 +7,9 @@ class Process:
         self.function_list = function_list
 
     def execute(self, df):
-        for function in self.function_list:
-            df = function(df)
+        if len(df) > 0:
+            for function in self.function_list:
+                df = function(df)
         return df
 
 

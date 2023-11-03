@@ -1,10 +1,10 @@
-import mysql.connector
-  
 class DataSource:
 
     def __init__(self, ID_data_source, data_source_config):
         self.ID = ID_data_source
         self.data_source = data_source_config
+        self.data_source_args = {}
+        self.source_response_type = 'plain_text'
         self.encoder = None
 
     def set_encoder(self, encoder):
@@ -17,28 +17,8 @@ class DataSource:
             self.set_mysql(data_source_config['host'], 
                            data_source_config['username'], 
                            data_source_config['password'], 
-                           data_source_config['database'])
-
-    def set_url(self, url):
-        self.data_source = url
-        
-    def set_mysql(self, host, username, password, database):
-        try:
-            # Establish a connection to the MySQL database
-            connection = mysql.connector.connect(
-                host=host,
-                user=username,
-                password=password,
-                database=database
-            )
-
-            if connection.is_connected():
-                print("Connected to MySQL database")
-                self.data_source = connection
-
-        except mysql.connector.Error as err:
-            print("Error: ", err)
-
+                           data_source_config['database'],
+                           data_source_config['query'])
     def get_data_source(self):
         return self.data_source
         
@@ -55,4 +35,19 @@ class DataSourceConfig:
             "source_type": "url",
             "source_response": "plain_text",
             "url": url
+        }
+    
+    def query_source_config(self, host, username, password, database, query):
+        return {
+            "source_type": "query_mysql",
+            "username": username,
+            "password": password,
+            "database": database,
+            "host": host,
+            "query": query
+        }
+    
+    def custom_source_config(self):
+        return {
+            "source_type": "custom"
         }

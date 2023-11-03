@@ -5,15 +5,17 @@ from datetime import datetime
 import pandas as pd
 import mysql.connector
 
+from . import __custom_dependencies
+
 class Ingestion():
 
-    def __init__(self, ID, custom_scraping = None):
+    def __init__(self, ID, custom_function = None, feedback = {}):
         self.ID = ID
         self.data_source = None
         self.data = {}
         self.control = None
-        self.custom_scraping = custom_scraping
-        self.set_process = None
+        self.custom_function = custom_function
+        self.feedback = feedback
 
     def set_data_source(self, data_source):
         self.data_source = data_source
@@ -36,11 +38,8 @@ class Ingestion():
                 # Parse the HTML content of the page
                 try:  
                     soup = BeautifulSoup(response.content, 'html.parser')
-                    if self.custom_scraping is None:
-                        columns = ["original_tag", "mapping_tag", "text", "url", "date_time", "ingestion_ID"] 
-                        self.data = pd.DataFrame(data=self.__scraping(soup, tags_to_extract, mapping),columns=columns)
-                    else:
-                        self.data = pd.DataFrame(data=self.custom_scraping(soup))
+                    columns = ["original_tag", "mapping_tag", "text", "url", "date_time", "ingestion_ID"] 
+                    self.data = pd.DataFrame(data=self.__scraping(soup, tags_to_extract, mapping),columns=columns)
 
                 except Exception as e:
                     print("Error:", e)
@@ -76,8 +75,8 @@ class Ingestion():
                     "ingestion_ID": self.ID   
                     })
         return extracted_text
-         
-    def from_mysql(self):
+
+    def from_query_mysql(self):
         df = {}
         try:
             # Establish a connection to the MySQL database
@@ -101,5 +100,5 @@ class Ingestion():
             print("Error: ", err)
         self.data = df
     
-    def from_json(self):
-        None
+    def from_custom_function(self):
+        self.data, self.feedback = self.custom_function(self.feedback)
