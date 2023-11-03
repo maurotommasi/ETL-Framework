@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import pandas as pd
+import mysql.connector
 
 class Ingestion():
 
@@ -73,6 +74,30 @@ class Ingestion():
                     "ingestion_ID": self.ID   
                     })
         return extracted_text
+         
+    def from_mysql(self):
+        df = {}
+        try:
+            # Establish a connection to the MySQL database
+            host = self.data_source.get_data_source()['host']
+            user = self.data_source.get_data_source()['username']
+            password = self.data_source.get_data_source()['password']
+            database = self.data_source.get_data_source()['database']
+            connection = mysql.connector.connect(host=host, user=user, password=password, database=database)
+            if connection.is_connected():
+                query = self.data_source.get_data_source()['query']
+                cursor = connection.cursor()
+                cursor.execute(query)
+                column_names = [description[0] for description in cursor.description]
+                results = cursor.fetchall()
+                df = pd.DataFrame(results, columns=column_names)
+                cursor.close()
+                connection.close()
+            else:
+                print(f"Not Connected to host: {host} - database: {database}")
+        except mysql.connector.Error as err:
+            print("Error: ", err)
+        self.data = df
     
     def from_json(self):
         None

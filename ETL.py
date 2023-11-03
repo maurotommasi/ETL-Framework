@@ -133,6 +133,7 @@ class ETL():
                 dt_ingestion_start = datetime.now()
                 self.__log(f'Running Ingestion {ingestion.ID}...') if self.log else None
                 ingestion.from_html() if ingestion.data_source.data_source['source_type'] == 'url' else None # Scraping
+                ingestion.from_mysql() if ingestion.data_source.data_source['source_type'] == 'mysql' else None # MySQL
                 data = ingestion.data
                 self.__log(f'Ingestion {ingestion.ID} successfully completed!') if self.log else None
 
