@@ -61,6 +61,9 @@ class ETL():
     def __link_ingestion_to_loader(self, ID_ingestion, ID_loader):
         self.loaders[ID_loader].set_data(self.ingestions[ID_ingestion].data)
 
+    def __link_encoder_to_loader(self, ID_encoder, ID_Loader):
+        self.loaders[ID_Loader].set_encoder(self.encoders[ID_encoder])
+
     def __link_control_to_loader(self, ID_control, ID_loader):
         self.loaders[ID_loader].set_control(self.controls[ID_control])
 
@@ -95,6 +98,7 @@ class ETL():
             else:
                 process = None
                 self.__link_ingestion_to_loader(flow["ID_ingestion"], flow["ID_loader"])
+            self.__link_encoder_to_loader(flow["ID_encoder"], flow["ID_loader"])
             self.__link_control_to_loader(flow["ID_control"], flow["ID_loader"])
 
             # Create thread to run the ETL pipeline

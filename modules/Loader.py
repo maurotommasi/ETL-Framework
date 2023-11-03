@@ -7,9 +7,13 @@ class Loader:
         self.data = None
         self.control = None
         self.save_config = save_config
+        self.encoder = None
 
     def set_data(self, data):
-        self.data = data
+        self.data = data.rename(columns=self.encoder.get_encoder()['mapping'])
+
+    def set_encoder(self, encoder):
+        self.encoder = encoder
 
     def set_safe_config(self, save_config):
         self.save_config = save_config
