@@ -8,19 +8,24 @@ class Loader:
         self.control = None
         self.save_config = save_config
         self.encoder = None
+        self.process = None
 
     def set_data(self, data):
         self.data = data.rename(columns=self.encoder.get_encoder()['mapping'])
 
-    def set_encoder(self, encoder):
-        self.encoder = encoder
 
     def set_safe_config(self, save_config):
         self.save_config = save_config
     
+    def set_encoder(self, encoder):
+        self.encoder = encoder
+
     def set_control(self, control):
         self.control = control
     
+    def set_process(self, process):
+        self.process = process
+
     def save_to_file(self, file_path = "export", export_format='csv'):
         if export_format == 'csv':
             file_path = f"{file_path}"

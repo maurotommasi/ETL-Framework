@@ -13,12 +13,14 @@ class Ingestion():
         self.data = {}
         self.control = None
         self.custom_scraping = custom_scraping
+        self.set_process = None
 
     def set_data_source(self, data_source):
         self.data_source = data_source
 
     def set_control(self, control):
         self.control = control
+
 
     # Scraping
 

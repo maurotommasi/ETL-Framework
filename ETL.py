@@ -64,6 +64,9 @@ class ETL():
     def __link_encoder_to_loader(self, ID_encoder, ID_Loader):
         self.loaders[ID_Loader].set_encoder(self.encoders[ID_encoder])
 
+    def __link_process_to_loader(self, ID_process, ID_Loader):
+        self.loaders[ID_Loader].set_process(self.processes[ID_process])
+
     def __link_control_to_loader(self, ID_control, ID_loader):
         self.loaders[ID_loader].set_control(self.controls[ID_control])
 
@@ -94,15 +97,15 @@ class ETL():
             self.__link_datasource_to_ingestion(flow["ID_datasource"], flow["ID_ingestion"])
             self.__link_control_to_ingestion(flow["ID_control"], flow["ID_ingestion"])
             if "ID_process" in flow:
-                process = self.processes[flow["ID_process"]]
+                self.__link_process_to_loader(flow["ID_process"], flow["ID_loader"])
             else:
-                process = None
                 self.__link_ingestion_to_loader(flow["ID_ingestion"], flow["ID_loader"])
             self.__link_encoder_to_loader(flow["ID_encoder"], flow["ID_loader"])
             self.__link_control_to_loader(flow["ID_control"], flow["ID_loader"])
 
+            print("Creating Thread...")
             # Create thread to run the ETL pipeline
-            self.threads.append(threading.Thread(target=self.__batch_run, args=(self.ingestions[flow["ID_ingestion"]], process, self.loaders[flow["ID_loader"]])))
+            self.threads.append(threading.Thread(target=self.__batch_run, args=(self.ingestions[flow["ID_ingestion"]], self.loaders[flow["ID_loader"]])))
 
             flow_index += 1
 
@@ -114,13 +117,12 @@ class ETL():
             thread.join()
 
     # Method for batch processing data ingestion, transformation, and loading
-    def __batch_run(self, ingestion, process, loader):    
+    def __batch_run(self, ingestion, loader):    
         
         dt_start = loader.control.start_from
 
         # Skip past ingestions
-
-        while datetime.now() > dt_start:
+        while datetime.now() > dt_start and loader.control.pause > 0:
             dt_start = dt_start + timedelta(seconds=loader.control.pause) 
         
         dt_base = dt_start
@@ -143,6 +145,7 @@ class ETL():
 
                 # Process
 
+                process = loader.process
                 if process is not None:
                     if len(process.function_list) > 0:
                         self.__log(f'Running Transformation {process.ID} for Ingestion {ingestion.ID}...') if self.log else None
