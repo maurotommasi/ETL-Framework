@@ -8,6 +8,7 @@ from .modules.Encoder import Encoder
 from .modules.Loader import Loader
 import threading
 import time
+import os
 from datetime import datetime, timedelta
 
 # Define the main ETL class
@@ -84,6 +85,7 @@ class Pipeline():
 
     def start(self):
 
+        self.__log(f"Pipeline {self.name} ProcessID: {os.getpid()}")
         # Log ETL pipeline flow information if logging is enabled
         self.__log(f"Linking Pipeline flows for {self.name}") if self.log else None
 

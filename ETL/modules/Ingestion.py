@@ -5,7 +5,11 @@ from datetime import datetime
 import pandas as pd
 import mysql.connector
 
-from . import __custom_dependencies
+#############################################
+#Insert here all libraries used for ingestion
+
+##############################################
+
 
 class Ingestion():
 
