@@ -44,11 +44,12 @@ Datasource defines which kind of source we are facing on. Right now we identify:
 - URL DataSource
 - MySQL DataSource
 - Custom DataSource
+
 Each of them has his own configuration as follow:
 
 ### URL DataSource
 
-This kind of DataSource will use BeautifulSoap4 to be able to screaping content from the website.
+This kind of DataSource will use BeautifulSoap4 to be able to scraping content from the website.
 Based on the tags defined inside the encoder it will extract all date into a dataframe.
 It's suggested for quick data acquisition. More advanced scraping tecniques can be done thanks to the Custom DataSource.
 ```python
@@ -103,6 +104,32 @@ def custom_source_config(self):
 
 ## Encoder:
 
+The encoder tell us the type of encoder and the mapping between the source fields and the loader fields. For example:
+```python
+{
+    "encoder_type": "html",
+    "mapping": {
+        "h1": "h1_m",
+        "h2": "h2_m",
+        "h3": "h3_m",
+        "h4": "h4_m",
+        "h5": "h5_m",
+        "h6": "h6_m",
+        "p": "p_m",
+        "a": "a_m",
+        "img": "img_m"
+    }
+}
+```
+This dictionary can be achieved using the html_encoder_config, mysql_encoder_config, custom_encoder_config. They will require a list for the source attributes and a list for the loader attributes in a 1-to-1 relationship.
+The example above is equals to:
+```python
+tags_from_source = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "a", "img"]
+tags_to_loader = ["h1_m", "h2_m", "h3_m", "h4_m", "h5_m", "h6_m", "p_m", "a_m", "img_m"]
+en_config = EncoderConfig().html_encoder_config(tags_from_source, tags_to_loader)
+```
+
+
 ## Ingestion:
 
 ## Transformation:
@@ -112,3 +139,9 @@ def custom_source_config(self):
 ## Flow
 
 # Real Case Use
+
+## Object interchangability
+
+## Multi Pipelines using shell scripting
+
+## Logging and issues control

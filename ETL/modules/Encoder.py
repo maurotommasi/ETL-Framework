@@ -23,7 +23,6 @@ class EncoderConfig:
                 index += 1
             return {
                 "encoder_type": "html",
-                "tags": tags,
                 "mapping": mapping
             }
     
