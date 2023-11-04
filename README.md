@@ -1,55 +1,114 @@
-# ETL (Extract, Transform, Load) Process
+# Python ETL Multithread Custom Process
 
-The provided Python code defines an ETL (Extract, Transform, Load) process to extract data from a specified data source (URL or MySQL database), transform the data using specified HTML tag mappings, and save the transformed data into a JSON file.
+The provided Python code defines an ETL (Extract, Transform, Load) process in a multi-thread class based infrastructure.
 
 # ETL Class Structure:
 
-## Attributes:
-        name: Name of the ETL process.
-        pause_seconds: Pause interval between successive runs (default is 24 hours).
+The Framework is able to manage different flows of acquisition, trasformation and loading from a DataSource to a final place.
+The framework schema follow the figure:
 
-## Source Class:
+<img src="./FrameworkSchema.png">
 
-### Attributes:
-        source_name: Name of the data source.
-        data_source: Instance of DataSource class.
-        encoder: Instance of Encoder class.
+We can see, from the image how the framework works:
+1) We have 3 flows (or streams) that start with some data from DataSource, DataSource 2 and DataSource 3.
+2) Every DataSource has an Encoder that defines the fields in input (from where? which fields?) and the field in output (to where? which fields?) of the flow
+3) The data will be downloaded from the DataSource using the method defined inside the DataSource
+4) The data can be transformed as needed
+5) The Flow Control System will define when and how often the flow has to be run. The FCS generates a new thread on the python process for each flow, saving CPUs on the waiting time
+6) All result data will be saved/uploaded as needed
 
-### Methods:
-        set_data_source(data_source, encoder): Set the data source and encoder for the source.
-        get_data_source(): Get the data source (URL or MySQL connection).
-        get_encoder(): Get the encoder type and mapping.
-        get_source_name(): Get the name of the data source.
+Ingestions, Trasformations and Loaders are fully customizable. The framework is on development, it provides some predefined, but limited, functionalities but it is possible to unlock all his potential with custom python functions.
 
-## DataSource Class:
+## Libraries to import
 
-### Attributes:
-        data_source: Holds the URL or MySQL connection object.
+The main library to be able to use the Framework is:
+```python
+from ETL.Pipeline import Pipeline
+```
 
-### Methods:
-        set_url(url): Set the data source as a URL.
-        set_mysql(host, username, password, database): Set the data source as a MySQL database connection.
-        get_data_source(): Get the data source (URL or MySQL connection).
+To be able to run properly the ETL pipeline we need to implement this list of libraries:
 
-## Encoder Class:
+```python
+from ETL.Pipeline import Pipeline, FlowConfig
+from ETL.modules.DataSource import DataSourceConfig
+from ETL.modules.Encoder import EncoderConfig
+from ETL.modules.Loader import LoaderConfig
+from ETL.modules.Utils import Utils
+from datetime import datetime
+```
 
-### Attributes:
-        html, plain_text, json, xml: Constants representing encoding types.
-        encoder: Holds the selected encoding type and mapping.
-### Methods:
-        set_html(mapping_url), set_plain_text(), set_json(mapping_url), set_xml(): Set encoding type and mapping.
-        __decode_mapping_json(file_path): Private method to decode JSON mapping file.
-        get_encoder(): Get the encoding type and mapping.
+Those libraries will help us to manage easily some configuration in few lines of code.
 
-## Extract Class:
+## DataSource:
+Datasource defines which kind of source we are facing on. Right now we identify:
+- URL DataSource
+- MySQL DataSource
+- Custom DataSource
+Each of them has his own configuration as follow:
 
-### Attributes:
-        source: Instance of Source class.
+### URL DataSource
 
-### Methods:
-        extract_text_from_website(): Extract text data from a website based on specified HTML tags and mappings.
+This kind of DataSource will use BeautifulSoap4 to be able to screaping content from the website.
+Based on the tags defined inside the encoder it will extract all date into a dataframe.
+It's suggested for quick data acquisition. More advanced scraping tecniques can be done thanks to the Custom DataSource.
+```python
+# Datasource Config
+url = "https://www.google.com"
+ds_config = DataSourceConfig().scraping_source_config(url)
+```
+This will create a dictionary as follow:
+```python
+def scraping_source_config(self, url):
+    return {
+        "source_type": "url",
+        "source_response": "plain_text",
+        "url": url
+    }
+```
+<b>Note:</b> source_type key is mandatory for each configuration.
 
-## Utils Class:
+### MySQL DataSource
 
-### Methods:
-        urlToFolder(url): Convert a URL to a folder name by removing "https://", "www.", and replacing slashes with underscores.
+```python
+# Datasource Config
+ds_config = DataSourceConfig().mysql_source_config("127.0.0.1", "root", "", "mt-engineering", "Select * from wp_postmeta")
+```
+This will create a dictionary as follow:
+```python
+def query_source_config(self, host, username, password, database, query):
+    return {
+        "source_type": "query_mysql",
+        "username": username,
+        "password": password,
+        "database": database,
+        "host": host,
+        "query": query
+    }
+```
+
+### Custom DataSource
+
+```python
+# Datasource Config
+ds_config = DataSourceConfig().custom_source_config()
+```
+This will create a dictionary as follow:
+```python
+def custom_source_config(self):
+    return {
+        "source_type": "custom"
+    }
+```
+
+
+## Encoder:
+
+## Ingestion:
+
+## Transformation:
+
+## Loader
+
+## Flow
+
+# Real Case Use
