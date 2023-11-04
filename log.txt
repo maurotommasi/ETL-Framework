@@ -14,3 +14,26 @@
 2023-11-04 16:37:00.057702: Loaded data from Ingestion IN2!
 2023-11-04 16:37:00.058726: Next execution for IN1 will be at 2023-11-04 16:37:30
 2023-11-04 16:37:00.058726: Next execution for IN2 will be at 2023-11-04 16:38:00
+2023-11-04 17:12:17.432426: Pipeline ETL Pipeline ProcessID: 29148
+2023-11-04 17:12:17.433426: Linking Pipeline flows for ETL Pipeline
+2023-11-04 17:12:17.447425: Wait for first execution at 2023-11-04 17:12:30 for IN1
+2023-11-04 17:12:17.453465: Wait for first execution at 2023-11-04 17:13:00 for IN2
+2023-11-04 17:12:30.010053: Running Ingestion IN1...
+2023-11-04 17:12:30.018285: Ingestion IN1 successfully completed!
+2023-11-04 17:12:30.018285: Running Transformation TR1 for Ingestion IN1...
+2023-11-04 17:12:30.019256: Trasformation TR1 for ingestion IN1 Done!
+2023-11-04 17:12:30.019256: Loading data from Ingestion IN1...
+2023-11-04 17:12:30.031554: Loaded data from Ingestion IN1!
+2023-11-04 17:12:30.031554: Next execution for IN1 will be at 2023-11-04 17:13:00
+2023-11-04 17:13:00.011562: Running Ingestion IN2...
+2023-11-04 17:13:00.017813: Ingestion IN2 successfully completed!
+2023-11-04 17:13:00.017813: Loading data from Ingestion IN2...
+2023-11-04 17:13:00.024813: Running Ingestion IN1...
+2023-11-04 17:13:00.044249: Loaded data from Ingestion IN2!
+2023-11-04 17:13:00.045228: Next execution for IN2 will be at 2023-11-04 17:14:00
+2023-11-04 17:13:00.047416: Ingestion IN1 successfully completed!
+2023-11-04 17:13:00.047416: Running Transformation TR1 for Ingestion IN1...
+2023-11-04 17:13:00.048428: Trasformation TR1 for ingestion IN1 Done!
+2023-11-04 17:13:00.049443: Loading data from Ingestion IN1...
+2023-11-04 17:13:00.062449: Loaded data from Ingestion IN1!
+2023-11-04 17:13:00.063417: Next execution for IN1 will be at 2023-11-04 17:13:30

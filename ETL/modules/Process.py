@@ -1,5 +1,3 @@
-from . import __custom_dependencies
-
 class Process:
 
     def __init__(self, ID, function_list):
