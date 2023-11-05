@@ -42,8 +42,8 @@ class Pipeline():
     def create_process(self, ID_process, function_list):
         self.processes[ID_process] = Process(ID_process, function_list)
 
-    def create_loader(self, ID_loader, save_config, custom_function = None):
-        self.loaders[ID_loader] = Loader(ID_loader, save_config, custom_function)
+    def create_loader(self, ID_loader, loader_config, custom_function = None):
+        self.loaders[ID_loader] = Loader(ID_loader, loader_config, custom_function)
 
     def create_control(self, ID_control, pause = 3600, pause_if_error = 3600, start_datetime = datetime.now()):
         self.controls[ID_control] = Control(ID_control, pause, pause_if_error, start_datetime)
@@ -185,8 +185,9 @@ class Pipeline():
     # Method for logging messages and appending them to a log file
 
     def __log(self, content):
-        print(content)
-        Utils().append_to_file('log.txt', f'{datetime.now()}: {content}')
+        message = f'{datetime.now()} ({os.getpid()}): {content}'
+        print(message)
+        Utils().append_to_file('log.txt', message )
 
 # Class for managing flow configurations
 
