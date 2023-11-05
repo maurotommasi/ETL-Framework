@@ -338,6 +338,28 @@ After having setup the pipeline flow we can start ETL process using:
 ```python
 pipeline.start()
 ```
+## Log
+
+A log.txt file will be created in the root folder. It will show all the processes of the pipeline in real time.
+
+```
+2023-11-05 21:30:08.208919 (18672): Pipeline ETL Pipeline ProcessID: 18672
+2023-11-05 21:30:08.209889 (18672): Linking Pipeline flows for ETL Pipeline
+2023-11-05 21:30:08.224071 (18672): Wait for first execution at 2023-11-05 21:30:30 for IN1
+2023-11-05 21:30:08.231039 (18672): Wait for first execution at 2023-11-05 21:31:00 for IN2
+2023-11-05 21:30:30.010281 (18672): Running Ingestion IN1...
+2023-11-05 21:30:30.040925 (18672): Ingestion IN1 successfully completed!
+2023-11-05 21:30:30.041921 (18672): Running Transformation TR1 for Ingestion IN1...
+2023-11-05 21:30:30.043906 (18672): Trasformation TR1 for ingestion IN1 Done!
+2023-11-05 21:30:30.043906 (18672): Loading data from Ingestion IN1...
+2023-11-05 21:30:31.206900 (18672): Loaded data from Ingestion IN1!
+2023-11-05 21:30:31.207912 (18672): Next execution for IN1 will be at 2023-11-05 21:31:00
+2023-11-05 21:31:00.014018 (18672): Running Ingestion IN1...
+2023-11-05 21:31:00.014018 (18672): Running Ingestion IN2...
+```
+
+The process, can be killed using shell commands.
+
 <!--
 # Real Case Use
 
