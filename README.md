@@ -1,4 +1,4 @@
-# Python ETL Multithread Custom Process
+# Python Multithread Class Based ETL
 
 The provided Python code defines an ETL (Extract, Transform, Load) process in a multi-thread class based infrastructure.
 
@@ -150,7 +150,7 @@ Right now we defined two standard ingestions and one fully customizable.
 After having created a DataSource with the url from where we will get the data and the encoder that will define which kind of operation will be run in the ingestion process, the standard scraping function will not require any additional parameter in the creation of the ingestion istance.
 
 The ingestion for standard functions will take:
-1) All the data from all the tags if the DataSource source_type is 'url'
+1) All the data from scraping all the tags if the DataSource source_type is 'url'
 2) All the data from a query MySQL if the the DataSource source_type is 'query_mysql'
 ```python
 pipeline.create_ingestion(ID_Ingestion = 'DS1')
